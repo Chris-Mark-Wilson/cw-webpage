@@ -1,0 +1,54 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
+
+#header{
+  
+  margin: 30px auto;
+ box-sizing: border-box; 
+ display: flex;
+ flex-direction: row;
+ width:80%;
+  background:linear-gradient(to left top, rgb(95, 20, 20) 20%, rgb(34, 34, 97) , rgb(36, 93, 36) 80%);
+  padding:1px 25px 1px 25px;
+  border:1px solid red;
+  border-radius: 50%;
+  text-align: center;
+  
+}
+#tel{
+width:25%;
+  margin:auto;
+
+}
+h1{
+  font-family: fantasy;
+  
+}
+#email{
+  width:25%;
+  margin:auto;
+}
+#content{
+  border-radius: 20px;
+  margin:2% 5% 2% 5%;
+  padding:5%;
+  height:50vh;
+  background:radial-gradient(ellipse at 30% , rgb(83, 113, 107) 10%,rgb(239, 232, 232 )  ,rgb(24, 14, 14) 90%)
+}
+.jobpic{
+  text-align: center;
+  color:black;
+  display:block;
+  flex-direction: column;
+  height:25%;
+  width:25%;
+ 
+}
+img{
+  width:100%;
+  
+}
