@@ -1,7 +1,7 @@
  export const Header=()=>{
     return(
         <div id="header">
-        <div id="tel">
+        <div className="sides" id="tel">
          <p> tel: 07597 852 695</p>
         
         </div>
@@ -10,7 +10,7 @@
        <h2>Renovations and property maintenance</h2>
        <h3>Peterborough / Cambridgeshire</h3>
        </div>
-       <div id="email">
+       <div className="sides" id="email">
    <p> email: cw.plastering.services@gmail.com</p>
    </div>
        </div>
