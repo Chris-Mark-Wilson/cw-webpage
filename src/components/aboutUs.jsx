@@ -1,17 +1,18 @@
-export const EarlyHistory=()=>{
+import { MyCarousel } from "./myCarousel"
+import { workImageArray } from "../assets/images"
+
+export const AboutUs=()=>{
     return(
-        <div className="history">
+        <div className="carouselContainer">
+         <div className="carouselText">
             <p>30 Years experience.</p>
             <p>All domestic building works undertaken.</p>
             <p>Hmo Conversions.</p>
             <p>Maintenance and repairs</p>
             <p>No job too big or small.</p>
         </div>
-    )
-}
-export const LaterHistory=()=>{
-    return(
-        <div className="history">
+        <MyCarousel imageArray={workImageArray} />
+        <div className="carouselText">
             <p>Competitive pricing.</p>
             <p>Contract works.</p>
             <p>NIC/EIC Electrical works.</p>
@@ -19,5 +20,6 @@ export const LaterHistory=()=>{
             <p>Call us for a quote today!</p>
 
         </div>
+      </div>
     )
 }

@@ -1,6 +1,6 @@
 import axios from 'axios'
 import {descObject} from '../assets/descObject'
-{/*wants an object back with keys temp and description*/}
+import {bikeImageUrls} from '../assets/images'
 
 const weatherApi=axios.create({
     baseURL:'https://api.open-meteo.com/v1'
@@ -18,4 +18,11 @@ export const  fetchCurrentWeather=()=>{
        
         return (err)
     })
+}
+
+export const fetchBikeImages=(bikeImageArray,setBikeImageArray,bikeImageUrls)=>{
+
+
+    
+
 }

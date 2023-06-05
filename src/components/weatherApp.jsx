@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import {useEffect} from 'react'
-import {fetchCurrentWeather} from '../utils/fetchWeather'
+import {fetchCurrentWeather} from '../utils/fetchApi'
 import Clock from './clock'
 
 
@@ -17,7 +17,7 @@ setTemp(result.temp)
 setTime(result.time) 
 })})
 return(
-    <>
+    <div id="weather">
 <div>
     <p>Peterborough, cambridgeshire</p>
    Data retrieved at: {time} 
@@ -28,6 +28,6 @@ return(
         Current sky: {description}
     </div>
     <div id="clock"><Clock/></div>
-    </>
+    </div>
     )
 }

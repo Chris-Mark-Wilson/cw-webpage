@@ -4,7 +4,8 @@
   padding: 2rem;
   text-align: center;
   background:linear-gradient(to top right, rgb(83,111,107),rgb(255,255,255));
-  height:919px;
+  height:fit-content;
+ 
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,11 +22,11 @@
  box-sizing: border-box; 
  display: flex;
  flex-direction: row;
- width:80%;
+ width:fit-content;
  background:radial-gradient(ellipse at 30% , rgb(83, 113, 107) 10%,rgb(239, 232, 232 )  ,rgb(24, 14, 14) 90%);
   padding:1px 25px 1px 25px;
   border:1px ;
-  border-radius: 50%;
+  border-radius: 20px;
   text-align: center;
 }
 
@@ -35,7 +36,11 @@ width:25%;
 
 }
 h1{
-  font-family:cursive;
+  font-family:'Times New Roman', Times, serif;
+  margin-top: 10px;
+}
+#boro{
+  margin-bottom: 20px;
 }
 
 #email{
@@ -43,7 +48,7 @@ h1{
   margin:auto;
 }
 
-.history{
+.carouselText{
       display:flex;
   flex-direction: column;
   align-items: center;
@@ -56,7 +61,7 @@ h1{
 #weather{
   padding:4%;
   display:flex;
-  height: 75px;
+  height:fit-content;
   align-items: center;
   justify-content: space-evenly;
   background:radial-gradient(ellipse at 60% , rgb(83, 113, 107) 10%,rgb(239, 232, 232 )  ,rgb(24, 14, 14) 90%);
@@ -64,8 +69,10 @@ h1{
   border: 1px ;
   border-radius: 20px;
 }
-
-.historyContainer{
+p{
+  margin:0;
+}
+.carouselContainer{
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -95,11 +102,6 @@ img{
   border:1px solid;
   border-radius: 5px;
   object-fit: contain;
-}
-.demopage{
-  height:400;
-  width:300;
- 
 }
 
 #clock{

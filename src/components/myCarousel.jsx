@@ -1,9 +1,9 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel'
 
-export const WorkImageCarousel=({imageArray})=>{
+export const MyCarousel=({imageArray})=>{
 return(
-<Carousel  slide={false} fade ={true} controls={false} indicators={false} >
+<Carousel  slide={false}  controls={true} indicators={false} >
     {imageArray.map(({url,label},index)=>{
         return(
         <Carousel.Item key={index}>
@@ -13,7 +13,7 @@ return(
             style={{objectFit:"cover",maxHeight:"300px", maxWidth:"300px"}}
             />
             <Carousel.Caption>
-                <h3>{label}</h3>
+                <h5>{label}</h5>
             </Carousel.Caption>
         </Carousel.Item>
         )
