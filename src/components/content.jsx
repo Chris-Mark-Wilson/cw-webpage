@@ -9,22 +9,6 @@ export const Content=()=>{
     
    </section>
 
-
-<br></br>
-
-
-   <section className="content" id="content2">
-   
-    
-   
-  </section>
-
-  <br></br>
-
-
-  <section className="content" id="content2">
-   
-    
-  </section>
-  </div>  )
+</div>
+  )
 }

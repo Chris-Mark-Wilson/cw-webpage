@@ -79,20 +79,27 @@ h1{
 
 .content{
   display:flex;
-  flex-direction: row;
-  align-content:space-between;
+ 
+  justify-content: space-around;
   border-radius: 20px;
   margin:0% 10% 0% 10%;
   padding:2%;
-  /* height:50vh; */
+ 
   background:radial-gradient(ellipse at 30% , rgb(83, 113, 107) 10%,rgb(239, 232, 232 )  ,rgb(24, 14, 14) 90%)
 }
 
 img{
+  max-height: 300px;
   max-width: 300px;
   width:100%;
   border:1px solid;
   border-radius: 5px;
+  object-fit: contain;
+}
+.demopage{
+  height:400;
+  width:300;
+ 
 }
 
 #clock{
