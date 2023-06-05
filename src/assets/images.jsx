@@ -33,3 +33,7 @@ export const workImageArray=[
     url:"https://lh3.googleusercontent.com/AMMDXXHzd5Veu-Yclq1e3BSvCKBnRp6akuPGSDpTU9QvWlw0pSsWKCDepK8VHLEFrEMtBwELgiYPfABAozy8AOjp1Pp0c6UduUJC_badxm_XqHZH2uJy3lS4wFU_v6qaEFxlnmCOQg=w2400"}
 
 ]
+
+export const bikeImages={
+    1:'https://lh3.googleusercontent.com/gRClPoBeYUP90pKUgvWQ6MzrWgM2MJjWRyk4P230DcNwWgqTDhjKiW5GxtXPCHd3wzFnh36gTEpUci4Cp7z6VEcCquBHXjds6VvCZSRxGHMCFSBpRuBdXn8zyLVKmhu4mUq8rQskuw=w2400'
+}
