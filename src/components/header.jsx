@@ -8,7 +8,7 @@
        <h3 id="boro">Peterborough  Cambridgeshire</h3>
        </div>
        <div className="sides" id="tel">
-         <p> tel: 07597 852 695</p>
+         <p> tel: 07597 852695</p>
         
         </div>
        <div className="sides" id="email">

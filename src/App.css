@@ -139,7 +139,7 @@ img{
    display: flex;
    flex-direction: column;
    /* width:fit-content; */
-   background:radial-gradient(circle at 50% , rgb(83, 113, 107) 10%,rgb(239, 232, 232 )  ,rgb(24, 14, 14) 90%);
+   background:radial-gradient(circle at 20% , rgb(137, 177, 169) 5%,rgb(239, 232, 232 )  ,rgb(24, 14, 14) 95%);
     padding:1px 25px 1px 25px;
     border:1px ;
     border-radius: 20px;
@@ -156,8 +156,9 @@ img{
     flex-direction: column;
     flex-wrap: nowrap;
     width:25%;
-    margin:auto;
+    margin:auto auto 20px auto;
     align-items: center;
+    color:rgb(245, 22, 22);
     
   }
   #tel{
@@ -170,5 +171,30 @@ img{
       align-items: center;
     
     }
+    #weather{
+      padding:4%;
+      display:flex;
+      flex-direction: column;
+      height:fit-content;
+      align-items: center;
+      justify-content: space-evenly;
+      background:radial-gradient(ellipse at 60% , rgb(83, 113, 107) 10%,rgb(239, 232, 232 )  ,rgb(24, 14, 14) 90%);
+      margin:0 1% 1% 1%;
+      border: 1px ;
+      border-radius: 20px;
+    }
+    .carouselContainer{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      margin:0 1% 1% 1%;
+      border: 1px ;
+      border-radius: 20px;
+      display:flex;
+      height:fit-content;
+      background:radial-gradient(ellipse at 30% , rgb(83, 113, 107) 10%,rgb(239, 232, 232 )  ,rgb(24, 14, 14) 90%)
+    }
+   
   
  }
