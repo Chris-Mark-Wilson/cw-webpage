@@ -4,7 +4,7 @@ import {fetchCurrentWeather} from '../utils/fetchApi'
 import Clock from './clock'
 
 
-export const WeatherApp=()=>{
+export const CurrentWeather=()=>{
     const[description,setDescription]=useState('No weather returned')
 const [temp,setTemp]=useState(0)
 const[time,setTime]=useState("00:00")

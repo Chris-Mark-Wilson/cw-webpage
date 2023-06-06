@@ -1,8 +1,8 @@
 import { lockdownImageUrls } from "../assets/lockdownImages";
-import { MyCarousel } from "./myCarousel";
+import { ImageCarousel } from "./imageCarousel";
 
 export const Lockdown = () => {
-  // const [bikeImageArray, setBikeImageArray] = useState([]);
+  
 
   return (
     <div className="carouselContainer">
@@ -11,7 +11,7 @@ export const Lockdown = () => {
 
         <p>Summer House and electric bikes </p>
       </div>
-      <MyCarousel imageArray={lockdownImageUrls} />
+      <ImageCarousel imageArray={lockdownImageUrls} />
       <div className="carouselText">
         <p>Its amazing what you can find to keep yourself amused...</p>
 

@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { Header } from "./components/header";
 import React from "react";
-import { WeatherApp } from "./components/weatherApp";
+import { CurrentWeather } from "./components/currentWeather";
 import {AboutUs} from './components/aboutUs'
 import {  Lockdown } from "./components/lockdown";
+import { Forecast } from "./components/forecast";
+
 
 import "./App.css";
 
@@ -13,10 +15,10 @@ function App() {
   return (
     <>
       <Header />
-     
       <AboutUs/>
-      <WeatherApp />
+      <CurrentWeather />
       <Lockdown />
+      <Forecast/>
     </>
   );
 }

@@ -1,4 +1,4 @@
-import { MyCarousel } from "./myCarousel";
+import { ImageCarousel } from "./imageCarousel";
 import { workImageArray } from "../assets/workImages";
 
 export const AboutUs = () => {
@@ -11,7 +11,7 @@ export const AboutUs = () => {
         <p>Maintenance and repairs</p>
         <p>No job too big or small.</p>
       </div>
-      <MyCarousel imageArray={workImageArray} />
+      <ImageCarousel imageArray={workImageArray} />
       <div className="carouselText">
         <p>Competitive pricing.</p>
         <p>Contract works.</p>
