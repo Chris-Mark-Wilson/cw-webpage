@@ -13,8 +13,9 @@ function App() {
   return (
     <>
       <Header />
-      <WeatherApp />
+     
       <AboutUs/>
+      <WeatherApp />
       <Bikes />
     </>
   );

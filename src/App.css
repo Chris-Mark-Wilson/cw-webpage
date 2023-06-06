@@ -139,7 +139,7 @@ img{
    display: flex;
    flex-direction: column;
    /* width:fit-content; */
-   background:radial-gradient(circle at 20% , rgb(137, 177, 169) 5%,rgb(239, 232, 232 )  ,rgb(24, 14, 14) 95%);
+   background:radial-gradient(ellipse at 50% , rgb(144, 187, 178) 5%,rgb(239, 232, 232 )  ,rgb(24, 14, 14) 95%);
     padding:1px 25px 1px 25px;
     border:1px ;
     border-radius: 20px;
@@ -154,56 +154,63 @@ img{
     font-weight: bold;
     display:flex;
     flex-direction: column;
-    flex-wrap: nowrap;
-    width:25%;
-    margin:auto auto 20px auto;
+    flex-wrap: wrap;
+    width:fit-content;
+    margin:auto auto 10% auto;
     align-items: center;
     color:rgb(17, 9, 9);
     
   }
   #tel{
     font-weight: bold;
+    font-size: larger;
     display:flex;
     flex-direction: column;
     flex-wrap: nowrap;
     width:25%;
-      margin:auto;
+      margin:auto auto 5% auto;
       align-items: center;
     
     }
     #weather{
+      font-size: large;
+      font-weight: bold;
       padding:4%;
       display:flex;
       flex-direction: column;
       height:fit-content;
       align-items: center;
       justify-content: space-evenly;
-      background:radial-gradient(ellipse at 60% , rgb(83, 113, 107) 10%,rgb(239, 232, 232 )  ,rgb(24, 14, 14) 90%);
-      margin:0 1% 1% 1%;
+      background:radial-gradient(ellipse at 50% , rgb(144, 187, 178) 5%,rgb(239, 232, 232 )  ,rgb(18, 24, 14) 95%);
+      margin:5% 1% 5% 1%;
+      padding:10% 0 10% 0;
       border: 1px ;
       border-radius: 20px;
-    }
+    } 
     .carouselContainer{
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      flex-wrap: wrap;
+      /* justify-content: space-between; */
       align-items: center;
       margin:0 1% 1% 1%;
       border: 1px ;
       border-radius: 20px;
-      display:flex;
+      
       height:fit-content;
-      background:radial-gradient(ellipse at 30% , rgb(83, 113, 107) 10%,rgb(239, 232, 232 )  ,rgb(24, 14, 14) 90%)
+      background:radial-gradient(ellipse at 50% , rgb(144, 187, 178) 5%,rgb(239, 232, 232 )  ,rgb(24, 14, 14) 95%)
     }
     .carouselText{
       display:flex;
+      flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* height:300px; */
-  width:300px;
+  height:fit-content;
+  width:fit-content;
     color:rgb(10, 12, 12);
-    margin:0 2% 0 2%;
+    margin:5% 2% 5% 2%;
+
 }
    
   

@@ -19,6 +19,7 @@ setTime(result.time)
 return(
     <div id="weather">
 <div>
+    Current weather
     <p>Peterborough, cambridgeshire</p>
    Data retrieved at: {time} 
 </div>
