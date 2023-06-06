@@ -1,6 +1,27 @@
+@media  (max-width: 424px) {
+  #header{
+    color:rgb(241, 7, 7);
+    margin: 10px auto 10px auto;
+   /* box-sizing:border-box;  */
+   display: flex;
+   flex-direction: column;
+   /* width:fit-content; */
+   background:radial-gradient(ellipse at 30% , rgb(83, 113, 107) 10%,rgb(239, 232, 232 )  ,rgb(24, 14, 14) 90%);
+    padding:1px 25px 1px 25px;
+    border:1px ;
+    border-radius: 20px;
+    text-align: center;
+  }
+  h1{
+    font-family:'Times New Roman', Times, serif;
+    margin-top: 10px;
+    color:red;
+  }
+ }
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
+  /* max-width: 1280px; */
+  
   padding: 2rem;
   text-align: center;
   background:linear-gradient(to top right, rgb(83,111,107),rgb(255,255,255));
@@ -14,15 +35,18 @@
     color: rgb(163, 105, 47);
     outline: 5px dashed #000;
   }
-
 }
+
+ 
+
+
 #header{
   color:rgb(9, 10, 10);
   margin: 10px auto 10px auto;
- box-sizing: border-box; 
+ /* box-sizing:border-box;  */
  display: flex;
  flex-direction: row;
- width:fit-content;
+ /* width:fit-content; */
  background:radial-gradient(ellipse at 30% , rgb(83, 113, 107) 10%,rgb(239, 232, 232 )  ,rgb(24, 14, 14) 90%);
   padding:1px 25px 1px 25px;
   border:1px ;
@@ -65,7 +89,7 @@ h1{
   align-items: center;
   justify-content: space-evenly;
   background:radial-gradient(ellipse at 60% , rgb(83, 113, 107) 10%,rgb(239, 232, 232 )  ,rgb(24, 14, 14) 90%);
-  margin:0 10% 1% 10%;
+  margin:0 1% 1% 1%;
   border: 1px ;
   border-radius: 20px;
 }
@@ -76,7 +100,7 @@ p{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin:0 10% 1% 10%;
+  margin:0 1% 1% 1%;
   border: 1px ;
   border-radius: 20px;
   display:flex;
@@ -107,3 +131,44 @@ img{
 #clock{
   font-size: 30px;
 }
+@media  (max-width: 425px) {
+  #header{
+    color:rgb(19, 13, 13);
+    margin: 10px auto 10px auto;
+   /* box-sizing:border-box;  */
+   display: flex;
+   flex-direction: column;
+   /* width:fit-content; */
+   background:radial-gradient(circle at 50% , rgb(83, 113, 107) 10%,rgb(239, 232, 232 )  ,rgb(24, 14, 14) 90%);
+    padding:1px 25px 1px 25px;
+    border:1px ;
+    border-radius: 20px;
+    text-align: center;
+  }
+  h1{
+    font-family:'Times New Roman', Times, serif;
+    margin-top: 10px;
+    color:rgb(8, 6, 6);
+  }
+  #email{
+    font-weight: bold;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width:25%;
+    margin:auto;
+    align-items: center;
+    
+  }
+  #tel{
+    font-weight: bold;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width:25%;
+      margin:auto;
+      align-items: center;
+    
+    }
+  
+ }
