@@ -8,8 +8,7 @@ import {fetchDailyWeather} from '../utils/fetchApi'
 
 export const Forecast=()=>{
     const[description,setDescription]=useState('No weather returned')
-const [temp,setTemp]=useState(0)
-const[time,setTime]=useState("00:00")
+
 const[weatherArray,setWeatherArray]=useState([])
 
 const [startDate, setStartDate] = useState(new Date())
