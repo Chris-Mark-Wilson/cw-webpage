@@ -17,7 +17,7 @@ export const AboutUs = () => {
         <p>Contract works.</p>
         <p>NIC/EIC Electrical works.</p>
         <p>Gas Safe Heating / Hot water.</p>
-        <p>Call us for a quote today!</p>
+        <p>Call us for a quote today</p>
       </div>
     </div>
   );
