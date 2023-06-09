@@ -145,8 +145,19 @@ img{
     border-radius: 20px;
     text-align: center;
   }
+  /* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+  @font-face {
+    font-family: myFirstFont;
+    src: url(https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap);
+ }
+  @font-face {
+    font-family: myFirstFont;
+    src: url(https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap);
+    font-weight: bold;
+ } */
   h1{
-    font-family:'Times New Roman', Times, serif;
+    text-shadow: #FC0 1px 0 10px;
+    font-family:Dancing Script;
     margin-top: 10px;
     color:rgb(8, 6, 6);
   }
