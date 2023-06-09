@@ -3,6 +3,7 @@
         <div id="header">
        
         <div id="chris">
+            <h3>under construction</h3>
             <h2>Example webpage</h2>
             <h2> written by</h2>
              <h1>Chris Wilson</h1>  
@@ -15,7 +16,9 @@
         
         </div>
        <div className="sides" id="email">
-    email: cw.plastering.services@gmail.com
+    <p>email: cw.plastering.services@gmail.com</p>
+    chris@cmwilson.co.uk
+
    </div>
        </div>
     )
