@@ -1,15 +1,16 @@
-import { getStorage, ref, getDownloadURL } from 'firebase/storage';
-import {storage} from '../firebase'
+import { getStorage, ref, getDownloadURL ,listAll} from 'firebase/storage';
+import {storage} from '../firebaseConfig'
+import {useState} from 'react';
 
-export const getUrl =() =>{
+export const getUrl =(ref) =>{
 
-    return (getPictureDownloadURL())
+    return (getPictureDownloadURL(ref))
 }
 
-const getPictureDownloadURL= async()=>{
+const getPictureDownloadURL= async(ref)=>{
     try{
-    const pictureRef = ref(storage,'sh1.jpg');
-    const url=await getDownloadURL(pictureRef);
+    
+    const url=await getDownloadURL(ref);
    
    return(url)
     }
@@ -18,6 +19,20 @@ const getPictureDownloadURL= async()=>{
     }
     }
 
-
+    //refs.items is an array of references
+    export const getUrlList=async(folder)=>{
+        try{
+        const listRef=ref(storage,`${folder}`)
+               
+   const refs=await listAll(listRef)
+       
+          
+       return     (refs.items) //array
+      
+    }
+    catch(error){
+        console.log(error)
+    }
+    }
 // gs://cw-webpage-1686390194073.appspot.com/
 // firebase bucket root address

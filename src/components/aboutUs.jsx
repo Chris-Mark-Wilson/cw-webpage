@@ -1,7 +1,27 @@
 import { ImageCarousel } from "./imageCarousel";
-import { workImageArray } from "../assets/workImages";
+
+import {useState,useEffect}from 'react'
+import{getUrlList} from '../utils/firebaseApi'
+import { getUrl } from "../utils/firebaseApi";
 
 export const AboutUs = () => {
+  const workImageArray=[];
+ 
+    getUrlList('work_pics')
+    .then((refArray)=>{
+        refArray.forEach((ref)=>{
+        getUrl(ref)
+            .then((url)=>{
+               
+               workImageArray.push(url)
+             })
+          })
+      })
+    
+  
+  
+  console.log(workImageArray)
+  
   return (
     <div className="carouselContainer">
       <div className="carouselText">

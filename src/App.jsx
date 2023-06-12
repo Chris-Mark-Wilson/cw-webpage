@@ -5,7 +5,7 @@ import { CurrentWeather } from "./components/currentWeather";
 import {AboutUs} from './components/aboutUs'
 import {  Lockdown } from "./components/lockdown";
 import { Forecast } from "./components/forecast";
-import {TestImage} from './components/testImage'
+
 import "./App.css";
 
 
@@ -19,7 +19,7 @@ function App() {
       <CurrentWeather />
       <Lockdown />
       <Forecast/>
-      <TestImage/>
+    
     </>
   );
 }

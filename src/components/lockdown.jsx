@@ -11,7 +11,7 @@ export const Lockdown = () => {
 
         <p>Summer House and electric bikes </p>
       </div>
-      <ImageCarousel imageArray={lockdownImageUrls} />
+      {/* <ImageCarousel imageArray={lockdownImageUrls} /> */}
       <div className="carouselText">
         <p>Its amazing what you can find to keep yourself amused...</p>
 

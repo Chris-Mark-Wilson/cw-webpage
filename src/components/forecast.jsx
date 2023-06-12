@@ -19,6 +19,7 @@ useEffect(()=>{
     fetchDailyWeather(startDate,endDate)
 .then((result)=>{
 setWeatherArray(result)
+
 })})
 
 
