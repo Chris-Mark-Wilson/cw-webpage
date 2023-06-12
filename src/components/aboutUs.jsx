@@ -27,7 +27,6 @@ export const AboutUs = () => {
     },[imageRefs])
   
   
-  console.log(workImageArray)
   
   return (
     <div className="carouselContainer">
