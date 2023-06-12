@@ -5,19 +5,26 @@ import{getUrlList} from '../utils/firebaseApi'
 import { getUrl } from "../utils/firebaseApi";
 
 export const AboutUs = () => {
-  const workImageArray=[];
+  const [workImageArray,setWorkImageArray]=useState([]);
+  const[imageRefs,setImageRefs]=useState([])
  
+
+  useEffect(()=>{
     getUrlList('work_pics')
     .then((refArray)=>{
-        refArray.forEach((ref)=>{
+       setImageRefs(refArray)
+    });
+    },[])
+
+    useEffect(()=>{
+      imageRefs.forEach((ref)=>{
         getUrl(ref)
-            .then((url)=>{
-               
-               workImageArray.push(url)
-             })
-          })
+        .then((url)=>{
+          setWorkImageArray(workImageArray=>
+            [...workImageArray,url])
+        })
       })
-    
+    },[imageRefs])
   
   
   console.log(workImageArray)

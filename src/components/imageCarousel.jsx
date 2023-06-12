@@ -4,7 +4,7 @@ import Carousel from 'react-bootstrap/Carousel'
 export const ImageCarousel=({imageArray})=>{
     console.log(imageArray)
 return(
- <Carousel  slide={true}  controls={true} indicators={false} > 
+ <Carousel  slide={false}  controls={true} indicators={false} > 
 {imageArray.map((url,index)=>{
         return(
         <Carousel.Item key={index}>
