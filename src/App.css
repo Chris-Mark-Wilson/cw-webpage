@@ -38,7 +38,11 @@
 }
 
  
-
+#carouselitem{
+object-fit: contain;
+ 
+ 
+}
 
 #header{
   color:rgb(9, 10, 10);
