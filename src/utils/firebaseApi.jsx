@@ -1,6 +1,5 @@
-import { getStorage, ref, getDownloadURL ,listAll} from 'firebase/storage';
+import {ref, getDownloadURL ,listAll} from 'firebase/storage';
 import {storage} from '../firebaseConfig'
-import {useState} from 'react';
 
 export const getUrl =(ref) =>{
 
