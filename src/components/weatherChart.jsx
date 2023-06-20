@@ -22,8 +22,8 @@ export const WeatherChart=({weatherObj})=>{
                   return (
     
                     <BarChartContainer key={index}>
-                       <Number color={["green"]}>{Math.round(temp)} </Number> 
-                        <MakeBar height={temp * 2} colors={["red","green"]} />
+                       <Number color={["black"]}>{Math.round(temp)} </Number> 
+                        <MakeBar height={temp * 2} colors={["rgb(207,53,33)","rgb(116,173,62)","rgb(62,141,173)"]} />
                      </BarChartContainer> 
                   );
                 })}; 

@@ -3,11 +3,11 @@ import styled, { css } from "styled-components";
 export const Container = styled.div`
   margin: 0px auto;
   max-width: 500px;
-  height: 500px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  overflow:auto;
+ 
 `;
 
 export const MainContainer = styled.div`
@@ -15,6 +15,8 @@ export const MainContainer = styled.div`
   justify-content: space-between;
   width: 100%;
   height: 100%;
+    
+  overflow:auto;
 `;
 
 export const BarChartContainer = styled.div`
@@ -30,13 +32,13 @@ export const Chart = css`
   &:hover {
     opacity: 0.8;
   }
-  @media (max-width: 420px) {
-    width: 34px;
+  @media (max-width: 425px) {
+    width: 30px;
   }
 `;
 
 export const Number = styled.span`
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-align: center;
   color: ${(props) => props.color};
 `;
@@ -45,8 +47,9 @@ export const MakeBar = styled.div`
   height: ${(props) => props.height}%;
   background-image: linear-gradient(
     to bottom,
-    ${(props) => props.colors[0]},
-    ${(props) => props.colors[1]}
+    ${(props) => props.colors[0]} ,
+    ${(props) => props.colors[1]} 50%,
+    ${(props)=> props.colors[2]} 
   );
   ${Chart};
 `;
