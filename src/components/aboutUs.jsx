@@ -44,6 +44,7 @@ export const AboutUs = () => {
         <p>NIC/EIC Electrical works.</p>
         <p>Gas Safe Heating / Hot water.</p>
         <p>Call us for a quote today</p>
+        <a href= {'../'} className="button_link">Back to title page</a>
       </div>
     </div>
   );

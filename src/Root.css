@@ -1,23 +1,4 @@
-@media  (max-width: 424px) {
-  #header{
-    color:rgb(241, 7, 7);
-    margin: 10px auto 10px auto;
-   /* box-sizing:border-box;  */
-   display: flex;
-   flex-direction: column;
-   /* width:fit-content; */
-   background:radial-gradient(ellipse at 30% , rgb(83, 113, 107) 10%,rgb(239, 232, 232 )  ,rgb(24, 14, 14) 90%);
-    padding:1px 25px 1px 25px;
-    border:1px ;
-    border-radius: 20px;
-    text-align: center;
-  }
-  h1{
-    font-family:'Times New Roman', Times, serif;
-    margin-top: 10px;
-    color:red;
-  }
- }
+/*  */
 
 #root {
   /* max-width: 1280px; */
@@ -37,6 +18,9 @@
   }
 }
 
+a{
+  color:black;
+}
  
 #carouselitem{
 object-fit: contain;
@@ -58,9 +42,10 @@ object-fit: contain;
   text-align: center;
 }
 
-#tel{
+#links{
 width:25%;
   margin:auto;
+  text-align: center;
 
 }
 h1{

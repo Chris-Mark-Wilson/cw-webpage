@@ -29,6 +29,8 @@ return(
         Current sky: {description}
     </div>
     <div id="clock"><Clock/></div>
+    <a href= {'../'} className="button_link">Back to title page</a>
     </div>
+    
     )
 }

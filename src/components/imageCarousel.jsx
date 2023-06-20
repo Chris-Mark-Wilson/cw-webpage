@@ -10,8 +10,9 @@ return(
         <Carousel.Item key={index}>
             <img className="d-block w-100"
             src={url}
-            id="carouselitem"
-            // style={{objectFit:"contain",maxHeight:"300px", maxWidth:"300px"}}
+            id="carouselitem" 
+             style={{objectFit:"contain",maxHeight:"300px", maxWidth:"300px"}}
+           
             />
             <Carousel.Caption>
                {index+1}

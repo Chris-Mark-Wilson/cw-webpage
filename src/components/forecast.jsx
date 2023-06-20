@@ -30,6 +30,7 @@ return(
  <h6>From {startDate.toLocaleDateString()}</h6>
   
  <WeatherChart weatherObj={weatherObj}/>
+ <a href= {'../'} className="button_link">Back to title page</a>
     </div>
     )
 }

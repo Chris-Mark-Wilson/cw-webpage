@@ -31,7 +31,7 @@ export const Lockdown = () => {
       <div className="carouselText">
         <p>Its amazing what you can find to keep yourself amused...</p>
 
-        <p></p>
+        <a href= {'../'} className="button_link">Back to title page</a>
       </div>
     </div>
   );

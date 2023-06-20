@@ -7,7 +7,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
- 
+ overflow:scroll;
 `;
 
 export const MainContainer = styled.div`
@@ -16,7 +16,7 @@ export const MainContainer = styled.div`
   width: 100%;
   height: 100%;
     
-  overflow:auto;
+  overflow:scroll;
 `;
 
 export const BarChartContainer = styled.div`
