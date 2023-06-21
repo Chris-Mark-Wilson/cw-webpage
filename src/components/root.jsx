@@ -5,7 +5,10 @@
         <div id="header">
        
         <div id="chris">
-            <h3>under construction</h3>
+            <br/><br/>
+            <h3>Site under construction <br/>Live development please excuse the layout while I work on the functionality
+            </h3>
+            <br/>
             <h2>Example webpage</h2>
             <h2> written by</h2>
              <h2>Chris Wilson</h2>  
@@ -14,6 +17,8 @@
        <h6>weather api  open-meteo.com</h6>
        </div>
        <div id="links">
+        Quick links to mini apps/ functions etc
+        <br/>
          <Link to = {'aboutUs'}>Carousel of my old job</Link>
          <br/>
          <Link to = {'currentWeather'}>Current weather</Link>

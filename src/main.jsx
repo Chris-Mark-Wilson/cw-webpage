@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState } from 'react'
 import ReactDOM from 'react-dom/client'
 import { ErrorPage } from './components/errorPage'
 import './index.css'
@@ -10,6 +11,7 @@ import { CurrentWeather } from './components/currentWeather.jsx'
 import { Lockdown } from './components/lockdown.jsx'
 import { Forecast } from './components/forecast.jsx'
 
+
 const router= createBrowserRouter([
   {
     path:"/",
@@ -18,7 +20,7 @@ const router= createBrowserRouter([
   },
   {
     path:"/aboutUs",
-    element:<AboutUs/>
+    element:<AboutUs />
   },
   {
     path:"/currentWeather",
@@ -26,11 +28,11 @@ const router= createBrowserRouter([
   },
   {
     path:"/lockdown",
-    element:<Lockdown/>
+    element:<Lockdown />
   },
   {
     path:"/forecast",
-    element:<Forecast/>
+    element:<Forecast />
   }
 
 ])

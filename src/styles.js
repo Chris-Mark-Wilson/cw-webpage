@@ -7,7 +7,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
- overflow:scroll;
+ 
 `;
 
 export const MainContainer = styled.div`
@@ -16,7 +16,7 @@ export const MainContainer = styled.div`
   width: 100%;
   height: 100%;
     
-  overflow:scroll;
+  overflow:auto;
 `;
 
 export const BarChartContainer = styled.div`
@@ -24,9 +24,12 @@ export const BarChartContainer = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+ 
+  margin:0 2% 0 0;
 `;
 
 export const Chart = css`
+border-radius: 5px 5px 0 0;
   margin-top: 10px;
   width: 56px;
   &:hover {
@@ -37,8 +40,13 @@ export const Chart = css`
   }
 `;
 
-export const Number = styled.span`
-  font-size: 1rem;
+export const  Temp =  styled.span`
+  font-size: 0.8rem;
+  text-align: center;
+  color: ${(props) => props.color};
+`;
+export const Time = styled.span`
+  font-size: 0.8rem;
   text-align: center;
   color: ${(props) => props.color};
 `;
