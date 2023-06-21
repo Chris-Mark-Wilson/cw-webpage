@@ -15,11 +15,12 @@ import {
   import {objectify} from '../utils/objectify'
   import {Spinner} from 'react-bootstrap'
 
+
+
+
 export const WeatherChart=({startDate,endDate})=>{
   const [isLoading,setIsLoading]=useState(true)
   const[weatherObj,setWeatherObj]=useState([])
-
-
 
 useEffect(()=>{
     fetchDailyWeather(startDate,endDate)
@@ -54,18 +55,21 @@ setIsLoading(false);
         
              <Container>
                <MainContainer>
+               
                 {weatherArray.map(({temp,time,rain,cloud,desc},index) => {
                   return (
-    
+  
                     <BarChartContainer key={index}>
                        <Temp color={["black"]}>{Math.round(temp)}℃</Temp> 
-                        <MakeBar height={temp * 2} colors={["rgb(207,53,33)","rgb(116,173,62)","rgb(62,141,173)"]} />
-                        <Time color={["blue"]}>{time}:00</Time>
-                       <Time color={["green"]}>{rain}%</Time>
+                        <MakeBar height={temp * 2} colors={["rgb(207,53,33)","rgb(144,218,24)","rgb(62,141,173)"]} />
+                        <Time color={["black"]}>{time}:00</Time>
+                       <Time color={["blue"]}>{rain}%</Time>
                        
                      </BarChartContainer> 
                   );
-                })}; 
+                })};
+                
+               
               </MainContainer>
                <BlackLine />
              </Container>

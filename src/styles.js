@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 export const Container = styled.div`
   margin: 0px auto;
   max-width: 500px;
-  height: 250px;
+  height: 175px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -39,6 +39,11 @@ border-radius: 5px 5px 0 0;
     width: 30px;
   }
 `;
+export const  Number =  styled.span`
+  font-size: 0.8rem;
+  text-align: center;
+  color: ${(props) => props.color};
+`;
 
 export const  Temp =  styled.span`
   font-size: 0.8rem;
@@ -52,11 +57,11 @@ export const Time = styled.span`
 `;
 
 export const MakeBar = styled.div`
-  height: ${(props) => props.height}%;
+  height: ${(props) => props.height*0.75}%;
   background-image: linear-gradient(
     to bottom,
     ${(props) => props.colors[0]} ,
-    ${(props) => props.colors[1]} 50%,
+    ${(props) => props.colors[1]} ${(props)=> props.height-40}px,
     ${(props)=> props.colors[2]} 
   );
   ${Chart};
