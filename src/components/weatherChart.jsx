@@ -56,12 +56,13 @@ setIsLoading(false);
              <Container>
                <MainContainer>
                
-                {weatherArray.map(({temp,time,rain,cloud,desc},index) => {
+                {weatherArray.map(({temp,time,rain,cloud,desc,day},index) => {
                   return (
   
                     <BarChartContainer key={index}>
                        <Temp color={["black"]}>{Math.round(temp)}℃</Temp> 
                         <MakeBar height={temp * 2} colors={["rgb(207,53,33)","rgb(144,218,24)","rgb(62,141,173)"]} />
+                        <Time color={["blue"]}>{day}</Time>
                         <Time color={["black"]}>{time}:00</Time>
                        <Time color={["blue"]}>{rain}%</Time>
                        

@@ -13,7 +13,7 @@ const[endDate,setEndDate]=useState(new Date(startDate.getFullYear(),startDate.ge
 
 const [tomorrow,setTomorrow]=useState(new Date(startDate.getFullYear(),startDate.getMonth(),startDate.getDate()+2))
 
-const [key, setKey] = useState('7days');
+const [key, setKey] = useState('today');
 return(
     <Tabs
     id="controlled-tab-example"
@@ -39,7 +39,7 @@ return(
  <h5>Weather Tomorrow</h5>
  <h6>{tomorrow.toDateString()}</h6>
   
- <WeatherChart  startDate={tomorrow} endDate={tomorrow}/>
+ <WeatherChart  startDate={tomorrow} endDate={tomorrow} />
  <hr/>
  <a href= {'../'} className="button_link">Back to title page</a>
     </div>
@@ -52,7 +52,7 @@ return(
  <h6>From {startDate.toDateString()}</h6>
  <h6>To {endDate.toDateString()}</h6>
   
- <WeatherChart  startDate={startDate} endDate={endDate}/>
+ <WeatherChart  startDate={startDate} endDate={endDate} day={true}/>
  <hr/>
  <a href= {'../'} className="button_link">Back to title page</a>
     </div>

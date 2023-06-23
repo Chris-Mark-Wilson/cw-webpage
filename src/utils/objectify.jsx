@@ -8,7 +8,8 @@ export const objectify=(obj)=>{
          temp:obj.temperature_2m[i],
          rain:obj.precipitation_probability[i],
          cloud:obj.cloudcover[i],
-         desc:descObject[obj.weathercode[i]]
+         desc:descObject[obj.weathercode[i]],
+         day:new Date(obj.time[i]).toDateString().slice(0,3)
 
         })
     }
