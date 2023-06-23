@@ -2,7 +2,7 @@ import {descObject} from '../assets/descObject'
 
 export const objectify=(obj)=>{
     let array=[]
-    for (let i=0;i<obj.time.length-1;i++){
+    for (let i=0;i<obj.time.length;i++){
         array.push({
          time:obj.time[i].toString().slice(11,13),
          temp:obj.temperature_2m[i],

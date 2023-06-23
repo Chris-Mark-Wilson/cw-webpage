@@ -26,7 +26,7 @@ export const fetchDailyWeather =  (startDate,endDate) => {
   const start=startDate.toJSON().toString().split('T')
  const end=endDate.toJSON().toString().split('T')
 
-  
+  console.log(start,end,"dates")
    return  weatherApi
       .get(`/forecast?latitude=52.52&longitude=13.41&hourly=temperature_2m,precipitation_probability,cloudcover,weathercode&start_date=${start[0]}&end_date=${end[0]}&timezone=GMT&`)
       .then((response)=>{
