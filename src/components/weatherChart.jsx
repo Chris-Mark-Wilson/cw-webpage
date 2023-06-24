@@ -37,13 +37,11 @@ setIsLoading(false);
     // each key is an array of 192 item
 
     if(isLoading)  return (
-      <Container>
-        <MainContainer>
+     <div id="spinner-container">
       <Spinner animation="border" role="status">
         <span className="visually-hidden">Loading...</span>
       </Spinner>
-      </MainContainer>
-      </Container>
+   </div>
     )
     
     const weatherArray=objectify(weatherObj)

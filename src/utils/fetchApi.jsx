@@ -28,9 +28,9 @@ export const fetchDailyWeather =  (startDate,endDate) => {
 
   console.log(start,end,"dates")
    return  weatherApi
-      .get(`/forecast?latitude=52.52&longitude=13.41&hourly=temperature_2m,precipitation_probability,cloudcover,weathercode&start_date=${start[0]}&end_date=${end[0]}&timezone=GMT&`)
+      .get(`/forecast?latitude=52.57&longitude=-0.25&hourly=temperature_2m,precipitation_probability,cloudcover,weathercode&start_date=${start[0]}&end_date=${end[0]}&timezone=GMT&`)
       .then((response)=>{
-   
+   console.log(response)
     return (response.data.hourly);
   } )
   .catch ((err) =>{

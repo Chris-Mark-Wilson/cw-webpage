@@ -20,6 +20,7 @@ return(
     activeKey={key}
     onSelect={(k) => setKey(k)}
     className="mb-3"
+    fill
   >
     <Tab eventKey="today" title="Today" >
        
