@@ -254,17 +254,17 @@ img{
 
    }
    #bar-maxTemp{
-    background-color:rgb(207, 53, 33);
+    background-color:rgb(131, 51, 41);
     border-radius:50% 50% 0 0;
     margin:0 10% 0 0 ;
    }
    #bar-minTemp{
-    background-color: rgb(144,218,24);
+    background-color: rgb(79, 122, 9);
     border-radius:50% 50% 0 0;
     margin:0 10% 0 0 ;
    }
    #bar-rain{
-    background-color: rgb(62,141,173);
+    background-color: rgb(76, 103, 190);
     border-radius:50% 50% 0 0;
     
    }

@@ -48,10 +48,10 @@ export const DailyChart=({startDate,endDate})=>{
                  <div className='chart-bar' id='bar-minTemp' style={{height:`${minTemp*4}px`}}/>
                  <div className='chart-bar' id='bar-rain' style={{height:`${(200/100)*rain}px`}}/>
             </div>
-        <div style={{fontSize:`0.7rem`}}>{maxTemp}°c</div>
-        <div style={{fontSize:`0.7rem`}}>{minTemp}°c</div>
-        <div style={{fontSize:`0.7rem`}}>{rain}%</div>
-        <div style={{fontSize:`0.7rem`}}>{new Date(time).toDateString().slice(0,3)}</div>
+        <div >{Math.round(maxTemp)}°c</div>
+        <div >{Math.round(minTemp)}°c</div>
+        <div>{rain}%</div>
+        <div >{new Date(time).toDateString().slice(0,3)}</div>
 
         </div>
     )
