@@ -1,5 +1,6 @@
-import { WeatherChart } from './weatherChart'
+import { HourlyChart } from './hourlyChart'
 import { useState } from 'react'
+import { DailyChart } from './dailyChart';
 
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
@@ -9,7 +10,7 @@ export const Forecast=()=>{
 
     const [startDate, setStartDate] = useState(new Date())
 
-const[endDate,setEndDate]=useState(new Date(startDate.getFullYear(),startDate.getMonth(),startDate.getDate()+8))
+const[endDate,setEndDate]=useState(new Date(startDate.getFullYear(),startDate.getMonth(),startDate.getDate()+7))
 
 const [tomorrow,setTomorrow]=useState(new Date(startDate.getFullYear(),startDate.getMonth(),startDate.getDate()+2))
 
@@ -28,7 +29,7 @@ return(
  <h5>Todays Weather</h5>
  <h6> {startDate.toDateString()}</h6>
   
- <WeatherChart  startDate={startDate} endDate={new Date(startDate)}/>
+ <HourlyChart  startDate={startDate} endDate={new Date(startDate)}/>
  <hr/>
  <a href= {'../'} className="button_link">Back to title page</a>
     </div>  
@@ -40,7 +41,7 @@ return(
  <h5>Weather Tomorrow</h5>
  <h6>{tomorrow.toDateString()}</h6>
   
- <WeatherChart  startDate={tomorrow} endDate={tomorrow} />
+ <HourlyChart  startDate={tomorrow} endDate={tomorrow} />
  <hr/>
  <a href= {'../'} className="button_link">Back to title page</a>
     </div>
@@ -53,7 +54,7 @@ return(
  <h6>From {startDate.toDateString()}</h6>
  <h6>To {endDate.toDateString()}</h6>
   
- <WeatherChart  startDate={startDate} endDate={endDate} day={true}/>
+ <DailyChart  startDate={startDate} endDate={endDate} day={true}/>
  <hr/>
  <a href= {'../'} className="button_link">Back to title page</a>
     </div>

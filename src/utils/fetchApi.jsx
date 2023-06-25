@@ -21,24 +21,46 @@ export const fetchCurrentWeather = () => {
     });
 }
 
-export const fetchDailyWeather =  (startDate,endDate) => {
+export const fetchHourlyWeather =  (startDate,endDate) => {
   // the date comes dd/mm/yyyy and it wants yyyy/mm/dd cos its a fucking wank api so this is my fix/patch/bodge/whatever it works ok?
   const start=startDate.toJSON().toString().split('T')
  const end=endDate.toJSON().toString().split('T')
 
-  console.log(start,end,"dates")
+  
    return  weatherApi
       .get(`/forecast?latitude=52.57&longitude=-0.25&hourly=temperature_2m,precipitation_probability,cloudcover,weathercode&start_date=${start[0]}&end_date=${end[0]}&timezone=GMT&`)
       .then((response)=>{
-   console.log(response)
+  
     return (response.data.hourly);
   } )
   .catch ((err) =>{
     console.log(err);
     return err;
   })
-};
-// hourly 7 days
+}
+
+export const fetchDailyWeather=(startDate,endDate)=>{
+  const start=startDate.toJSON().toString().split('T')
+  const end=endDate.toJSON().toString().split('T')
+  return  weatherApi
+  .get(`/forecast?latitude=52.57&longitude=-0.25&daily=weathercode,temperature_2m_max,temperature_2m_min,precipitation_probability_max&start_date=${start[0]}&end_date=${end[0]}&timezone=GMT`)
+  .then((response)=>{
+
+return (response.data.daily);
+} )
+.catch ((err) =>{
+console.log(err);
+return err;
+})
+
+
+}
+
+// 7 day average
+// https://api.open-meteo.com/v1/forecast?latitude=52.57&longitude=-0.25&daily=weathercode,temperature_2m_max,temperature_2m_min,precipitation_probability_max
+
+
+// hourly today, tomorrow
 // /forecast?latitude=52.52&longitude=13.41&hourly=temperature_2m,precipitation_probability,cloudcover&start_date=${start[0]}&end_date=${end[0]}&timezone=GMT
 
 //7days

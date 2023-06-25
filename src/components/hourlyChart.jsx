@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import {useEffect} from 'react'
-import {fetchDailyWeather} from '../utils/fetchApi'
+import {fetchHourlyWeather} from '../utils/fetchApi'
 import {
     MainContainer,
     Container,
@@ -18,12 +18,12 @@ import {
 
 
 
-export const WeatherChart=({startDate,endDate})=>{
+export const HourlyChart=({startDate,endDate})=>{
   const [isLoading,setIsLoading]=useState(true)
   const[weatherObj,setWeatherObj]=useState([])
 
 useEffect(()=>{
-    fetchDailyWeather(startDate,endDate)
+    fetchHourlyWeather(startDate,endDate)
 .then((result)=>{
    
 setWeatherObj(result);
