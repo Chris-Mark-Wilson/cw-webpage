@@ -20,19 +20,23 @@ const router= createBrowserRouter([
   },
   {
     path:"/aboutUs",
-    element:<AboutUs />
+    element:<AboutUs />,
+    errorElement:<ErrorPage/>
   },
   {
     path:"/currentWeather",
-    element:<CurrentWeather/>
+    element:<CurrentWeather/>,
+    errorElement:<ErrorPage/>
   },
   {
     path:"/lockdown",
-    element:<Lockdown />
+    element:<Lockdown />,
+    errorElement:<ErrorPage/>
   },
   {
     path:"/forecast",
-    element:<Forecast />
+    element:<Forecast />,
+    errorElement:<ErrorPage/>
   }
 
 ])

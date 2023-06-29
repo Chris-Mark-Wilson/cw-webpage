@@ -17,7 +17,7 @@ const [tomorrow,setTomorrow]=useState(new Date(startDate.getFullYear(),startDate
 const [key, setKey] = useState('today');
 return(
     <Tabs
-    id="controlled-tab-example"
+    id="forecast-tabs"
     activeKey={key}
     onSelect={(k) => setKey(k)}
     className="mb-3"
