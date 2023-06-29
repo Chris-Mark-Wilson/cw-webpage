@@ -1,43 +1,44 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { ErrorPage } from './components/errorPage'
+import { ErrorPage } from './routes/errorPage'
 import './index.css'
 import './Root.css'
-import {Root} from './components/root.jsx'
+import {Root} from './routes/root.jsx'
 import { createBrowserRouter,RouterProvider } from 'react-router-dom'
-import { AboutUs } from './components/aboutUs.jsx'
-import { CurrentWeather } from './components/currentWeather.jsx'
-import { Lockdown } from './components/lockdown.jsx'
-import { Forecast } from './components/forecast.jsx'
+import { AboutUs } from './routes/aboutUs.jsx'
+import { CurrentWeather } from './routes/currentWeather.jsx'
+import { Lockdown } from './routes/lockdown.jsx'
+import { Forecast } from './routes/forecast.jsx'
 
 
 const router= createBrowserRouter([
   {
     path:"/",
     element:<Root />,
-    errorElement:<ErrorPage/>
-  },
-  {
-    path:"aboutUs",
-    element:<AboutUs />,
-    errorElement:<ErrorPage/>
-  },
-  {
-    path:"currentWeather",
-    element:<CurrentWeather/>,
-    errorElement:<ErrorPage/>
-  },
-  {
-    path:"lockdown",
-    element:<Lockdown />,
-    errorElement:<ErrorPage/>
-  },
-  {
-    path:"forecast",
-    element:<Forecast />,
-    errorElement:<ErrorPage/>
+    errorElement:<ErrorPage/>,
+    children:[ {
+      path:"aboutUs",
+      element:<AboutUs />,
+      errorElement:<ErrorPage/>
+    },
+    {
+      path:"currentWeather",
+      element:<CurrentWeather/>,
+      errorElement:<ErrorPage/>
+    },
+    {
+      path:"lockdown",
+      element:<Lockdown />,
+      errorElement:<ErrorPage/>
+    },
+    {
+      path:"forecast",
+      element:<Forecast />,
+      errorElement:<ErrorPage/>
+    }
+  ]
   }
-
+ 
 ])
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

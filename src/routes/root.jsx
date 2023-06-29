@@ -1,11 +1,6 @@
- import {Link} from 'react-router-dom'
- import Tab from 'react-bootstrap/Tab';
-import Tabs from 'react-bootstrap/Tabs';
+
 import { useState } from 'react';
-import{AboutUs} from './aboutUs'
-import{Lockdown} from './lockdown'
-import {CurrentWeather} from './currentWeather'
-import {Forecast} from './forecast'
+import { Outlet } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -52,6 +47,9 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
     chris@cmwilson.co.uk
 
    </div>
+       </div>
+       <div id="outlet">
+        <Outlet/>
        </div>
        
 
