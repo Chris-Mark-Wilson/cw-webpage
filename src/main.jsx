@@ -18,22 +18,22 @@ const router= createBrowserRouter([
     errorElement:<ErrorPage/>
   },
   {
-    path:"/aboutUs",
+    path:"aboutUs",
     element:<AboutUs />,
     errorElement:<ErrorPage/>
   },
   {
-    path:"/currentWeather",
+    path:"currentWeather",
     element:<CurrentWeather/>,
     errorElement:<ErrorPage/>
   },
   {
-    path:"/lockdown",
+    path:"lockdown",
     element:<Lockdown />,
     errorElement:<ErrorPage/>
   },
   {
-    path:"/forecast",
+    path:"forecast",
     element:<Forecast />,
     errorElement:<ErrorPage/>
   }
