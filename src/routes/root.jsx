@@ -17,11 +17,11 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link href="/">Home</Nav.Link>
-                        <Nav.Link href="aboutUs">About us</Nav.Link>
-                         <Nav.Link href="lockdown">Lockdown</Nav.Link>
+                        <Nav.Link href="./aboutUs">About us</Nav.Link>
+                         <Nav.Link href="./lockdown">Lockdown</Nav.Link>
                          <NavDropdown title="Weather" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="currentWeather">Current</NavDropdown.Item>
-                            <NavDropdown.Item href="forecast">7 Day forecast</NavDropdown.Item>
+                            <NavDropdown.Item href="./currentWeather">Current</NavDropdown.Item>
+                            <NavDropdown.Item href="./forecast">7 Day forecast</NavDropdown.Item>
                          </NavDropdown>
                       </Nav>
                 </Navbar.Collapse>
