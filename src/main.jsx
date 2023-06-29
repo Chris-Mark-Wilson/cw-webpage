@@ -1,5 +1,4 @@
 import React from 'react'
-import { useState } from 'react'
 import ReactDOM from 'react-dom/client'
 import { ErrorPage } from './components/errorPage'
 import './index.css'
