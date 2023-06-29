@@ -29,7 +29,7 @@ export const AboutUs = () => {
   
   
   return (
-    <div className="carouselContainer" id="aboutUs">
+    <div className="carouselContainer" >
       <div className="carouselText">
         <p>30 Years experience.</p>
         <p>All domestic building works undertaken.</p>
