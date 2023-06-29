@@ -8,6 +8,11 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: flex-end;
  
+  background:radial-gradient(ellipse at 50% , rgb(144, 187, 178) 5%,rgb(239, 232, 232 )  ,rgb(18, 24, 14) 95%);
+  
+ 
+  border: 1px ;
+  border-radius: 20px;
 `;
 
 export const MainContainer = styled.div`

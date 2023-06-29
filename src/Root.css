@@ -71,7 +71,7 @@ h1{
     color:rgb(10, 12, 12);
 }
 
-#weather{
+.current-weather{
   padding:4%;
   display:flex;
   height:fit-content;
@@ -163,7 +163,7 @@ img{
       align-items: center;
     
     }
-    #weather{
+    .current-weather{
       font-size: large;
       font-weight: bold;
       padding:4%;
@@ -216,7 +216,13 @@ img{
     
    }
    .day-container{
-    
+    background:radial-gradient(ellipse at 50% , rgb(144, 187, 178) 5%,rgb(239, 232, 232 )  ,rgb(18, 24, 14) 95%);
+      margin:5% 1% 5% 1%;
+      padding:10% 0 10% 0;
+      border: 1px ;
+      border-radius: 20px;
+
+
     height:250px;
     width:100%;
     display:flex;

@@ -9,6 +9,7 @@ import { AboutUs } from './routes/aboutUs.jsx'
 import { CurrentWeather } from './routes/currentWeather.jsx'
 import { Lockdown } from './routes/lockdown.jsx'
 import { Forecast } from './routes/forecast.jsx'
+import { Header } from './routes/header'
 
 
 const router= createBrowserRouter([
@@ -16,7 +17,13 @@ const router= createBrowserRouter([
     path:"/",
     element:<Root />,
     errorElement:<ErrorPage/>,
-  },
+    children:[
+      {
+        path:"header",
+    element:<Header/>,
+  errorElement:<ErrorPage/>
+},
+  
   {
       path:"aboutUs",
       element:<AboutUs />,
@@ -37,7 +44,7 @@ const router= createBrowserRouter([
       element:<Forecast />,
       errorElement:<ErrorPage/>
     }
-  
+    ]}
  
 ])
 ReactDOM.createRoot(document.getElementById('root')).render(

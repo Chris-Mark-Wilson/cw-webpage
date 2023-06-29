@@ -17,7 +17,7 @@ setTemp(result.temp)
 setTime(result.time) 
 })})
 return(
-    <div id="weather">
+    <div className="current-weather">
 <div>
     Current weather
     <p>Peterborough, cambridgeshire</p>

@@ -46,7 +46,7 @@ export const DailyChart=({startDate,endDate})=>{
                   id='bar-maxTemp'  
                  style={{ height:`${maxTemp*4}px`}} />
                  <div className='chart-bar' id='bar-minTemp' style={{height:`${minTemp*4}px`}}/>
-                 <div className='chart-bar' id='bar-rain' style={{height:`${(200/100)*rain}px`}}/>
+                 <div className='chart-bar' id='bar-rain' style={{height:`${(120/100)*rain}px`}}/>
             </div>
         <div >{Math.round(maxTemp)}°c</div>
         <div >{Math.round(minTemp)}°c</div>

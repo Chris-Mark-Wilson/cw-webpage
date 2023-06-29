@@ -18,14 +18,15 @@ const [key, setKey] = useState('today');
 return(
     <Tabs
     id="forecast-tabs"
+    
     activeKey={key}
     onSelect={(k) => setKey(k)}
-    className="mb-3"
-    fill
+    className="mb-3 "
+   
   >
     <Tab eventKey="today" title="Today" >
        
-    <div id="forecast">
+    <div id="forecast" >
  <h5>Todays Weather</h5>
  <h6> {startDate.toDateString()}</h6>
   
