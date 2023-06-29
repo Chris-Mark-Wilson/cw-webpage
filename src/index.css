@@ -69,3 +69,273 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+#root {
+  /* max-width: 1280px; */
+  
+  padding: 2rem;
+  text-align: center;
+  background:linear-gradient(to top right, rgb(83,111,107),rgb(255,255,255));
+  height:fit-content;
+ 
+}
+
+@media (prefers-color-scheme: dark) {
+  .theme-a.adaptive {
+    background: rgb(17, 15, 13);
+    color: rgb(163, 105, 47);
+    outline: 5px dashed #000;
+  }
+}
+
+a{
+  color:black;
+}
+ 
+#carouselitem{
+object-fit: contain;
+ 
+ 
+}
+
+#header{
+  color:rgb(9, 10, 10);
+  margin: 10px auto 10px auto;
+ /* box-sizing:border-box;  */
+ display: flex;
+ flex-direction: row;
+ /* width:fit-content; */
+ background:radial-gradient(ellipse at 30% , rgb(83, 113, 107) 10%,rgb(239, 232, 232 )  ,rgb(24, 14, 14) 90%);
+  padding:1px 25px 1px 25px;
+  border:1px ;
+  border-radius: 20px;
+  text-align: center;
+}
+
+#links{
+width:25%;
+  margin:auto;
+  text-align: center;
+
+}
+h1{
+  font-family:'Times New Roman', Times, serif;
+  margin-top: 10px;
+}
+#boro{
+  margin-bottom: 20px;
+}
+
+#email{
+  width:25%;
+  margin:auto;
+}
+
+.carouselText{
+      display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height:300px;
+  width:300px;
+    color:rgb(10, 12, 12);
+}
+
+#weather{
+  padding:4%;
+  display:flex;
+  height:fit-content;
+  align-items: center;
+  justify-content: space-evenly;
+  background:radial-gradient(ellipse at 60% , rgb(83, 113, 107) 10%,rgb(239, 232, 232 )  ,rgb(24, 14, 14) 90%);
+  margin:0 1% 1% 1%;
+  border: 1px ;
+  border-radius: 20px;
+}
+p{
+  margin:0;
+}
+.carouselContainer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin:0 1% 1% 1%;
+  border: 1px ;
+  border-radius: 20px;
+  display:flex;
+  height:300px;
+  background:radial-gradient(ellipse at 30% , rgb(83, 113, 107) 10%,rgb(239, 232, 232 )  ,rgb(24, 14, 14) 90%)
+}
+
+.content{
+  display:flex;
+ 
+  justify-content: space-around;
+  border-radius: 20px;
+  margin:0% 10% 0% 10%;
+  padding:2%;
+ 
+  background:radial-gradient(ellipse at 30% , rgb(83, 113, 107) 10%,rgb(239, 232, 232 )  ,rgb(24, 14, 14) 90%)
+}
+
+img{
+  max-height: 300px;
+  max-width: 300px;
+  width:100%;
+  border:1px solid;
+  border-radius: 5px;
+  object-fit: contain;
+}
+
+#clock{
+  font-size: 30px;
+}
+@media  (max-width: 425px) {
+  #header{
+    color:rgb(19, 13, 13);
+    margin: 10px auto 10px auto;
+   /* box-sizing:border-box;  */
+   display: flex;
+   flex-direction: column;
+   /* width:fit-content; */
+   background:radial-gradient(ellipse at 50% , rgb(144, 187, 178) 5%,rgb(239, 232, 232 )  ,rgb(24, 14, 14) 95%);
+    padding:1px 25px 1px 25px;
+    border:1px ;
+    border-radius: 20px;
+    text-align: center;
+  }
+ 
+  h1{
+    text-shadow: #FC0 1px 0 10px;
+    font-family:Dancing Script;
+    margin-top: 10px;
+    color:rgb(8, 6, 6);
+  }
+  #email{
+    font-weight: bold;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width:fit-content;
+    margin:auto auto 10% auto;
+    align-items: center;
+    color:rgb(17, 9, 9);
+    
+  }
+  #tel{
+    font-weight: bold;
+    font-size: larger;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width:25%;
+      margin:auto auto 5% auto;
+      align-items: center;
+    
+    }
+    #weather{
+      font-size: large;
+      font-weight: bold;
+      padding:4%;
+      display:flex;
+      flex-direction: column;
+      height:fit-content;
+      align-items: center;
+      justify-content: space-evenly;
+      background:radial-gradient(ellipse at 50% , rgb(144, 187, 178) 5%,rgb(239, 232, 232 )  ,rgb(18, 24, 14) 95%);
+      margin:5% 1% 5% 1%;
+      padding:10% 0 10% 0;
+      border: 1px ;
+      border-radius: 20px;
+    } 
+  .init{color:rgb(62, 141, 173)}
+    .carouselContainer{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      /* justify-content: space-between; */
+      align-items: center;
+      margin:0 1% 1% 1%;
+      border: 1px ;
+      border-radius: 20px;
+      
+      height:fit-content;
+      background:radial-gradient(ellipse at 50% , rgb(144, 187, 178) 5%,rgb(239, 232, 232 )  ,rgb(24, 14, 14) 95%)
+    }
+    .carouselText{
+      display:flex;
+      flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height:fit-content;
+  width:fit-content;
+    color:rgb(10, 12, 12);
+    margin:5% 2% 5% 2%;
+
+}
+#spinner-container{
+  height:100px;
+  width:100px;
+  justify-content: center;
+  margin:auto;
+}
+   
+   .carousel{
+    color:#000;
+    
+   }
+   .day-container{
+    
+    height:250px;
+    width:100%;
+    display:flex;
+   flex-direction: column;
+   justify-content: flex-end;
+    margin:0 auto;
+    
+   }
+   .daydiv{
+    display:flex;
+    justify-content:space-evenly;
+    height:100%;
+    width:100%;
+  }
+  .bar-container{
+    display:flex;
+   
+    flex-direction: column;
+    justify-content: flex-end;
+    width:15%;
+    margin:0 2% 0 0;
+  }
+  .chart-bar{
+    flex-direction: column;
+    justify-content: flex-end;
+    position:relative;
+   width:33%;
+   
+   }
+   .three-bars{
+    display:flex;
+    flex-direction: row;
+    align-items: end;
+
+
+   }
+   #bar-maxTemp{
+    background-color:rgb(131, 51, 41);
+    border-radius:50% 50% 0 0;
+    margin:0 10% 0 0 ;
+   }
+   #bar-minTemp{
+    background-color: rgb(79, 122, 9);
+    border-radius:50% 50% 0 0;
+    margin:0 10% 0 0 ;
+   }
+   #bar-rain{
+    background-color: rgb(76, 103, 190);
+    border-radius:50% 50% 0 0;
+    
+   }
+   
+ }
