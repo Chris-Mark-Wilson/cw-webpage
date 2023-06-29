@@ -9,7 +9,9 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
  export const Root=()=>{
     const [key, setKey] = useState('root');
     return(
-        <>
+        
+        <div id="header">
+
         <Navbar expand="lg" className="bg-body-tertiary">
              <Container>
                 <Navbar.Brand href="./">Chris Wilson, rebooted...</Navbar.Brand>
@@ -27,7 +29,6 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
                 </Navbar.Collapse>
             </Container>
          </Navbar>  
-        <div id="header">
         <div id="chris">
             <br/><br/>
             <h3>Site under construction <br/>Live development please excuse the layout while I work on the functionality
@@ -47,12 +48,13 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
     chris@cmwilson.co.uk
 
    </div>
-       </div>
-       <div id="outlet">
+      
+        
+<div id="outlet">
         <Outlet/>
+      </div>
+     
        </div>
-       
 
-      </>
     )
 }
