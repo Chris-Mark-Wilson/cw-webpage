@@ -6,6 +6,7 @@ import {dailyfy} from '../utils/dailyfy'
 import {Spinner} from 'react-bootstrap'
 
 
+
 export const DailyChart=({startDate,endDate})=>{
     const [isLoading,setIsLoading]=useState(true)
     const[weatherObj,setWeatherObj]=useState([])

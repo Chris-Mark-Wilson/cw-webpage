@@ -12,7 +12,7 @@ export const fetchCurrentWeather = () => {
     .then((response) => {
       const temp = response.data.current_weather.temperature;
       const description = descObject[response.data.current_weather.weathercode];
-      const time = response.data.current_weather.time.replace("T", " ");
+      const time = response.data.current_weather.time.replace("T", " ").slice(10);
 
       return { temp: temp, description: description, time: time };
     })
@@ -22,7 +22,7 @@ export const fetchCurrentWeather = () => {
 }
 
 export const fetchHourlyWeather =  (startDate,endDate) => {
-  // the date comes dd/mm/yyyy and it wants yyyy/mm/dd cos its a fucking wank api so this is my fix/patch/bodge/whatever it works ok?
+  // the date comes dd/mm/yyyy and it wants yyyy/mm/dd  so this is my fix/patch/bodge
   const start=startDate.toJSON().toString().split('T')
  const end=endDate.toJSON().toString().split('T')
 

@@ -26,7 +26,7 @@ return(
 
     <div>
        <p> Current temperature: { temp}</p>    
-        Current sky: {description}
+        <img src= {description}></img>
     </div>
     <div id="clock"><Clock/></div>
     <button style={{backgroundColor:'gray'}}>
