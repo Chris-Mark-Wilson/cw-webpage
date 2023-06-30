@@ -52,6 +52,7 @@ export const DailyChart=({startDate,endDate})=>{
         <div >{Math.round(minTemp)}°c</div>
         <div>{rain}%</div>
         <div >{new Date(time).toDateString().slice(0,3)}</div>
+        <img style={{width:'100%', border:'none', backgroundColor:'blue'}} src={weatherDesc}></img>
 
         </div>
     )

@@ -45,7 +45,7 @@ setIsLoading(false);
     )
     
     const weatherArray=objectify(weatherObj)
-    // comes back as an array of 192 objects
+    // comes back as an array of 24 objects
     // each object has temp,time,rain,cloud,desc
      // (description from weathercode)
     

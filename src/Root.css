@@ -92,7 +92,7 @@ p{
   margin:0 1% 1% 1%;
   border: 1px ;
   border-radius: 20px;
-  display:flex;
+ 
   height:300px;
   background:radial-gradient(ellipse at 30% , rgb(83, 113, 107) 10%,rgb(239, 232, 232 )  ,rgb(24, 14, 14) 90%)
 }
