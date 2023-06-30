@@ -5,19 +5,19 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
- 
+ import { Header } from './header';
  export const Root=()=>{
-    const [key, setKey] = useState('root');
+
     return(
         
        <> 
-        <Navbar expand="lg" className="bg-body-tertiary">
+        <Navbar expand="sm" className="bg-body-tertiary" >
              <Container>
-                <Navbar.Brand href="./header">Site Nav</Navbar.Brand>
+                <Navbar.Brand href="./" >Site Nav</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="./header" >Home</Nav.Link>
+                        <Nav.Link href="./" >Home</Nav.Link>
                         <Nav.Link href="./aboutUs">About us</Nav.Link>
                          <Nav.Link href="./lockdown">Lockdown</Nav.Link>
                          <NavDropdown title="Weather" id="basic-nav-dropdown">
@@ -28,9 +28,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
                 </Navbar.Collapse>
             </Container>
          </Navbar>  
-            
-      
-        
+        <Header/>
 <div id="outlet">
         <Outlet/>
       </div>

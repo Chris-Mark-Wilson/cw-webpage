@@ -8,10 +8,10 @@ return(
 {imageArray.map((url,index)=>{
         return(
         <Carousel.Item key={index}>
-            <img className="d-block w-100"
+            <img 
             src={url}
             id="carouselitem" 
-             style={{objectFit:"contain",maxHeight:"300px", maxWidth:"300px"}}
+             style={{objectFit:"cover",height:"300px",width:"300px"}}
            
             />
             <Carousel.Caption>

@@ -30,8 +30,9 @@ export const Lockdown = () => {
       <ImageCarousel imageArray={shedImageArray} />
       <div className="carouselText">
         <p>Its amazing what you can find to keep yourself amused...</p>
-
+    <button style={{backgroundColor:'gray'}}>
         <a href= {'../'} className="button_link">Back to title page</a>
+        </button>
       </div>
     </div>
   );

@@ -96,6 +96,12 @@ p{
   height:300px;
   background:radial-gradient(ellipse at 30% , rgb(83, 113, 107) 10%,rgb(239, 232, 232 )  ,rgb(24, 14, 14) 90%)
 }
+.textContainer{
+  display:flexbox;
+  text-align: left;
+  align-items: flex-start;
+  
+}
 
 .content{
   display:flex;
@@ -120,6 +126,67 @@ img{
 #clock{
   font-size: 30px;
 }
+.day-container{
+  background:radial-gradient(ellipse at 50% , rgb(144, 187, 178) 5%,rgb(239, 232, 232 )  ,rgb(18, 24, 14) 95%);
+    margin:5% 1% 5% 1%;
+    padding:10% 0 10% 0;
+    border: 1px ;
+    border-radius: 20px;
+
+
+  height:fit-content;
+  width:100%;
+  display:flex;
+ flex-direction: column;
+ justify-content: flex-end;
+  margin:0 auto;
+  
+ }
+ .daydiv{
+  display:flex;
+  justify-content:space-evenly;
+  height:100%;
+  width:100%;
+}
+.bar-container{
+  display:flex;
+ 
+  flex-direction: column;
+  justify-content: flex-end;
+  width:15%;
+  margin:0 2% 0 0;
+}
+.chart-bar{
+  flex-direction: column;
+  justify-content: flex-end;
+  position:relative;
+ width:33%;
+ 
+ }
+ .three-bars{
+  display:flex;
+  flex-direction: row;
+  align-items: end;
+
+
+ }
+ #bar-maxTemp{
+  background-color:rgb(131, 51, 41);
+  border-radius:50% 50% 0 0;
+  margin:0 10% 0 0 ;
+ }
+ #bar-minTemp{
+  background-color: rgb(79, 122, 9);
+  border-radius:50% 50% 0 0;
+  margin:0 10% 0 0 ;
+ }
+ #bar-rain{
+  background-color: rgb(76, 103, 190);
+  border-radius:50% 50% 0 0;
+  
+ }
+ 
+/*--------------------------------------------------------------------------*/
 @media  (max-width: 425px) {
   #header{
     color:rgb(19, 13, 13);
@@ -213,65 +280,6 @@ img{
    
    .carousel{
     color:#000;
-    
-   }
-   .day-container{
-    background:radial-gradient(ellipse at 50% , rgb(144, 187, 178) 5%,rgb(239, 232, 232 )  ,rgb(18, 24, 14) 95%);
-      margin:5% 1% 5% 1%;
-      padding:10% 0 10% 0;
-      border: 1px ;
-      border-radius: 20px;
-
-
-    height:250px;
-    width:100%;
-    display:flex;
-   flex-direction: column;
-   justify-content: flex-end;
-    margin:0 auto;
-    
-   }
-   .daydiv{
-    display:flex;
-    justify-content:space-evenly;
-    height:100%;
-    width:100%;
-  }
-  .bar-container{
-    display:flex;
-   
-    flex-direction: column;
-    justify-content: flex-end;
-    width:15%;
-    margin:0 2% 0 0;
-  }
-  .chart-bar{
-    flex-direction: column;
-    justify-content: flex-end;
-    position:relative;
-   width:33%;
-   
-   }
-   .three-bars{
-    display:flex;
-    flex-direction: row;
-    align-items: end;
-
-
-   }
-   #bar-maxTemp{
-    background-color:rgb(131, 51, 41);
-    border-radius:50% 50% 0 0;
-    margin:0 10% 0 0 ;
-   }
-   #bar-minTemp{
-    background-color: rgb(79, 122, 9);
-    border-radius:50% 50% 0 0;
-    margin:0 10% 0 0 ;
-   }
-   #bar-rain{
-    background-color: rgb(76, 103, 190);
-    border-radius:50% 50% 0 0;
     
    }
    

@@ -32,7 +32,10 @@ return(
   
  <HourlyChart  startDate={startDate} endDate={new Date(startDate)}/>
  <hr/>
- <a href= {'../'} className="button_link">Back to title page</a>
+ <button style={{backgroundColor:'grey'}}>
+   <a href= {'../'} className="button_link">Back to title page</a>
+ </button>
+
     </div>  
     </Tab>
 
@@ -44,7 +47,9 @@ return(
   
  <HourlyChart  startDate={tomorrow} endDate={tomorrow} />
  <hr/>
- <a href= {'../'} className="button_link">Back to title page</a>
+ <button style={{backgroundColor:'grey'}}> <a href= {'../'} className="button_link">Back to title page</a>
+ </button>
+
     </div>
     </Tab>
 
@@ -57,7 +62,9 @@ return(
   
  <DailyChart  startDate={startDate} endDate={endDate} day={true}/>
  <hr/>
+ <button style={{backgroundColor:'grey'}}>
  <a href= {'../'} className="button_link">Back to title page</a>
+ </button>
     </div>
     </Tab>
   </Tabs>
