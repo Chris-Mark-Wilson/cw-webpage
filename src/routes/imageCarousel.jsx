@@ -11,7 +11,7 @@ return(
             <img 
             src={url}
             id="carouselitem" 
-             style={{objectFit:"cover",height:"300px",width:"300px"}}
+             style={{objectFit:"cover",height:"300px",width:'100%'}}
            
             />
             <Carousel.Caption>

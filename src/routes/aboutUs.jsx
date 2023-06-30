@@ -67,7 +67,7 @@ export const AboutUs = () => {
       <br/><br/>
       So, feel free to offer me a job. Me, Chris Wilson. 30 odd years as a builder, throw in some welding/fabrication experience and an apprenticeship with BAe and you have a mature individual, who can write front and back end applications, backed up with a lifetime of experience working with everyone from a fresh labourer to an accomplished architect.
       <br/>
-      Just bear in mind, I'm now that same fresh labourer again, I suppose I can barely swing a hammer' compared to a senior developer, but if the way things have gone in the building game turn out to be true for the IT game, once I get going, there is no stopping a grafter. Bring on the next 20 years...
+      Just bear in mind, I'm now that same fresh labourer again, I suppose I can 'barely swing a hammer' compared to a senior developer, but if the way things have gone in the building game turn out to be true for the IT game, once I get going, there is no stopping a grafter. Bring on the next 20 years...
           <br/>
           </p>
         </div>
