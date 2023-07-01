@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 export const Container = styled.div`
   margin: 0px auto;
   max-width: 500px;
-  height: 175px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -12,7 +12,7 @@ export const Container = styled.div`
   
  
   border: 1px ;
-  border-radius: 20px;
+  border-radius: 10px;
 `;
 
 export const MainContainer = styled.div`

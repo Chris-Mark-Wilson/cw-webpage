@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import {useEffect} from 'react'
-import {fetchDailyWeather} from '../utils/fetchApi'
+import {fetchDailyWeather} from '../utils/fetchWeatherApi'
 import {dailyfy} from '../utils/dailyfy'
 import {Spinner} from 'react-bootstrap'
 
