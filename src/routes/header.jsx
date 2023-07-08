@@ -7,10 +7,13 @@ export const Header=()=>{
             <h2>Example page</h2>
             <h2> written by</h2>
              <h2>Chris Wilson</h2>  
-             <h2>using React js </h2>
-             
-             <h2>Google Firebase storage</h2>
-             <h3>project built with vite</h3>
+             <h2>using</h2>
+             <h3> React js </h3>
+             <img src="./react.svg" style={{height:"40px",border:'none'}}></img>
+             <h3>Google</h3>
+             <img src='./Firebase_Logo.svg' style={{height:'30px',border:'none'}}></img>
+             <h3>vite</h3>
+             <img src='./vite.svg' style={{height:'40px',border:'none'}}></img>
        <h6>weather api  open-meteo.com</h6>
        </div>
        
