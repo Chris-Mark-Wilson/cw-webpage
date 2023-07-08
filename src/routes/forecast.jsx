@@ -7,6 +7,7 @@ import Tabs from 'react-bootstrap/Tabs';
 import { fetchCurrentWeather } from "../utils/fetchWeatherApi";
 import Clock from "./clock";
 import { fetchSelectedCity } from "../utils/geocodeApi";
+import {Geolocation} from './geolocation'
 
 export const Forecast=()=>{
 
@@ -106,6 +107,7 @@ return(
     <Tab eventKey="today" title="Today" >
        
     <div id="forecast" >
+      <Geolocation cityData={cityData} setCityData={setCityData} city={city} setCity={setCity} long={long} lat={lat} setLong={setLong} setLat={setLat}/>
  <h5>Todays Weather</h5>
  <h6> {startDate.toDateString()}</h6>
   

@@ -22,3 +22,13 @@ The daily chart, the one used by the 7day range forecast is done with inline sty
 - mobile first but adapt for full screen viewports, sideways phone etc..
 - possibly look into some odd shaped divs or maybe a game or two
 - try and get some animations in here somehow, even if its just an ```onClick()``` spinning div...
+
+## Game ideas
+- css battleships? cant think how to write that though...
+- breakout snake? ball is the snake? gets bigger the more you knock out? kick a hole go through - youre on the next screen, make it a 9x9 board of screens? collect power-ups, avoid the poisonous mushrooms... make the bat work like 'warlord' by atari i.e. it moves all the way round the edge of the screen? use a mouse, make the bat curved..
+- sabotage? old zx81 remake? good array based effects...
+- css 3d monster maze? any maze? css generated? cant be too difficult?
+- some sort of catapult physics based game? possibly 3d?
+- a good old text adventure requiring you to solve coding puzzles along the way?
+- splat? spectrum remake?
+
