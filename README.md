@@ -15,6 +15,7 @@ The daily chart, the one used by the 7day range forecast is done with inline sty
 - edit out exiting 'current' component from site nav, just make the tab 'weather' only
 - add nighttime icons functionality to ```objectify.jsx```. The icons are available in 'public' directory, it just needs a bit of a 'what time is it? so what icon do I want?' function in ```objectify.jsx```. 
 - upgrade the 7day chart to look better, the functionality works, so make it now look good. Possibly use the blended colours idea from the hourly chart where the tips 'glow' red after 20℃ (remember windowskey+. then Ω for emojis)
+- get rid of the css in js, rewrite the hourly chart using inline styling + vanilla css
 
 
  # Sort out the CSS 
