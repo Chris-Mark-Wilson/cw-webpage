@@ -7,12 +7,12 @@ import {Spinner} from 'react-bootstrap'
 
 
 
-export const DailyChart=({startDate,endDate})=>{
+export const DailyChart=({startDate,endDate, long, lat})=>{
     const [isLoading,setIsLoading]=useState(true)
     const[weatherObj,setWeatherObj]=useState([])
   
   useEffect(()=>{
-      fetchDailyWeather(startDate,endDate)
+      fetchDailyWeather(startDate,endDate,long,lat)
   .then((result)=>{
    
   setWeatherObj(result);

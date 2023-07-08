@@ -39,7 +39,7 @@ useEffect(() => {
     setTemp(result.temp);
     setTime(result.time);
   });
-}, [lat, long]);
+}, [city]);
 
 
 return(
@@ -109,7 +109,7 @@ return(
  <h5>Todays Weather</h5>
  <h6> {startDate.toDateString()}</h6>
   
- <HourlyChart  startDate={startDate} endDate={new Date(startDate)}/>
+ <HourlyChart  startDate={startDate} endDate={new Date(startDate)} long={long} lat={lat}/>
  <hr/>
  <button style={{backgroundColor:'grey'}}>
    <a href= {'../'} className="button_link">Back to title page</a>
@@ -124,7 +124,7 @@ return(
  <h5>Weather Tomorrow</h5>
  <h6>{tomorrow.toDateString()}</h6>
   
- <HourlyChart  startDate={tomorrow} endDate={tomorrow} />
+ <HourlyChart  startDate={tomorrow} endDate={tomorrow} long={long} lat={lat}/>
  <hr/>
  <button style={{backgroundColor:'grey'}}> <a href= {'../'} className="button_link">Back to title page</a>
  </button>
@@ -139,7 +139,7 @@ return(
  <h6>From {startDate.toDateString()}</h6>
  <h6>To {endDate.toDateString()}</h6>
   
- <DailyChart  startDate={startDate} endDate={endDate} day={true}/>
+ <DailyChart  startDate={startDate} endDate={endDate} day={true} long={long} lat={lat}/>
  <hr/>
  <button style={{backgroundColor:'grey'}}>
  <a href= {'../'} className="button_link">Back to title page</a>

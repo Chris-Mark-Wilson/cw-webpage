@@ -23,14 +23,14 @@ export const fetchCurrentWeather = (long, lat) => {
     });
 };
 
-export const fetchHourlyWeather = (startDate, endDate) => {
+export const fetchHourlyWeather = (startDate, endDate,long,lat) => {
   // the date comes dd/mm/yyyy and it wants yyyy/mm/dd  so this is my fix/patch/bodge
   const start = startDate.toJSON().toString().split("T");
   const end = endDate.toJSON().toString().split("T");
 
   return weatherApi
     .get(
-      `/forecast?latitude=52.57&longitude=-0.25&hourly=temperature_2m,precipitation_probability,cloudcover,weathercode&start_date=${start[0]}&end_date=${end[0]}&timezone=GMT&`
+      `/forecast?latitude=${lat}&longitude=${long}&hourly=temperature_2m,precipitation_probability,cloudcover,weathercode&start_date=${start[0]}&end_date=${end[0]}&timezone=GMT&`
     )
     .then((response) => {
       return response.data.hourly;
@@ -41,12 +41,12 @@ export const fetchHourlyWeather = (startDate, endDate) => {
     });
 };
 
-export const fetchDailyWeather = (startDate, endDate) => {
+export const fetchDailyWeather = (startDate, endDate,long,lat) => {
   const start = startDate.toJSON().toString().split("T");
   const end = endDate.toJSON().toString().split("T");
   return weatherApi
     .get(
-      `/forecast?latitude=52.57&longitude=-0.25&daily=weathercode,temperature_2m_max,temperature_2m_min,precipitation_probability_max&start_date=${start[0]}&end_date=${end[0]}&timezone=GMT`
+      `/forecast?latitude=${lat}&longitude=${long}&daily=weathercode,temperature_2m_max,temperature_2m_min,precipitation_probability_max&start_date=${start[0]}&end_date=${end[0]}&timezone=GMT`
     )
     .then((response) => {
       return response.data.daily;

@@ -17,12 +17,12 @@ import { Spinner } from "react-bootstrap";
 
 // uses js in css imported styled components
 
-export const HourlyChart = ({ startDate, endDate }) => {
+export const HourlyChart = ({ startDate, endDate, long,lat }) => {
   const [isLoading, setIsLoading] = useState(true);
   const [weatherObj, setWeatherObj] = useState([]);
 
   useEffect(() => {
-    fetchHourlyWeather(startDate, endDate).then((result) => {
+    fetchHourlyWeather(startDate, endDate, long, lat).then((result) => {
       setWeatherObj(result);
       setIsLoading(false);
     });

@@ -29,7 +29,7 @@ keys of  name, latitiude,longitude,country,admin1,admin2*/}
       setTemp(result.temp);
       setTime(result.time);
     });
-  }, [lat, long]);
+  }, [city]);
 
   return (
     <div className="current-weather" >
