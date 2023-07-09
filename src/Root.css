@@ -185,7 +185,17 @@ img{
   border-radius:50% 50% 0 0;
   
  }
- 
+ #geolocation{
+  padding:3% 0  0;
+  border:1px solid black;
+  border-radius:10px;
+ }
+ input,select{
+  background:white;
+  color:black;
+  height:18px;
+  border:1px solid black;
+ }
 /*--------------------------------------------------------------------------*/
 @media  (max-width: 425px) {
   #header{

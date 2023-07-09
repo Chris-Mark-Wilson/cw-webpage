@@ -15,9 +15,7 @@ export const Forecast=()=>{
 const[endDate,setEndDate]=useState(new Date(startDate.getFullYear(),startDate.getMonth(),startDate.getDate()+7))
 const [tomorrow,setTomorrow]=useState(new Date(startDate.getFullYear(),startDate.getMonth(),startDate.getDate()+2))
 const [key, setKey] = useState('today');
-const [description, setDescription] = useState("No weather returned");
-const [temp, setTemp] = useState(0);
-const [time, setTime] = useState("00:00");
+
 const [long, setLong] = useState(-0.25);
 const [lat, setLat] = useState(52.57);
 const [city, setCity] = useState("Peterborough");

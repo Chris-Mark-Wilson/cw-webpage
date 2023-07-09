@@ -57,7 +57,7 @@ export const AboutUs = () => {
           <br/>
           I've spent 30 plus years in the building game.
           <br/>
-         Now, it's time for a new chapter. Something I've always been interested in. Since 1982 at least. <br/>
+         Now, it's time for a new chapter. Something I've always been interested in, since 1982 at least. <br/>
          Computer programming. Or that's what it used to be called...
          <br/>
       These days it's more specialised, clearly, and what I've come to realise is that the passion I have for creativity, coupled with an insatiable lust for knowledge and personal development, leads me back to 'computer programming' even at this late stage of my career focused years. 

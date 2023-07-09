@@ -1,5 +1,5 @@
 
-import { useState } from 'react';
+
 import { Outlet } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -20,15 +20,17 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
                         <Nav.Link href="./" >Home</Nav.Link>
                         <Nav.Link href="./aboutUs">About us</Nav.Link>
                          <Nav.Link href="./lockdown">Lockdown</Nav.Link>
-                         <NavDropdown title="Weather" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="./currentWeather">Current</NavDropdown.Item>
-                            <NavDropdown.Item href="./forecast">7 Day forecast</NavDropdown.Item>
-                         </NavDropdown>
+                         
+                          
+                            <Nav.Link href="./forecast">WeatherApp</Nav.Link>
+                        
                       </Nav>
                 </Navbar.Collapse>
             </Container>
          </Navbar>  
+
         <Header/>
+        
 <div id="outlet">
         <Outlet/>
       </div>

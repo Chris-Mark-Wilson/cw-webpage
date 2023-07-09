@@ -17,10 +17,11 @@ export const Geolocation = ({cityData,setCityData,city, setCity, long, lat, setL
 console.log(cityData)
 return (
 <>
-<div>
+<div id="geolocation">
+  <div>
         {/* getting city name and long lat co-ordinates */}
 
-        <label htmlFor="cityName">Location (city): </label>
+        <label htmlFor="cityName">Search:   </label>
         <input
         defaultValue="Peterborough"
           id="cityName"
@@ -45,7 +46,7 @@ return (
                     })}
 
         </select></div>
-
+        </div>
 
 
 </>
