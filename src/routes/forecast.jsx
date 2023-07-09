@@ -8,6 +8,7 @@ import { fetchCurrentWeather } from "../utils/fetchWeatherApi";
 import Clock from "./clock";
 import { fetchSelectedCity } from "../utils/geocodeApi";
 import {Geolocation} from './geolocation'
+import { CurrentWeather } from './currentWeather';
 
 export const Forecast=()=>{
 
@@ -34,46 +35,12 @@ useEffect(() => {
 {/* returns an array of result objects limit 10 
 keys of  name, latitiude,longitude,country,admin1,admin2*/}
 
-useEffect(() => {
-  fetchCurrentWeather(long, lat).then((result) => {
-    setDescription(result.description);
-    setTemp(result.temp);
-    setTime(result.time);
-  });
-}, [city]);
 
 
 return(
-  <>
+  
 <div>
-        {/* getting city name and long lat co-ordinates */}
-
-        <label htmlFor="cityName">Location (city): </label>
-        <input
-        defaultValue="Peterborough"
-          id="cityName"
-          type="search"
-          variant=""
-          name="selectCity"
-          style={{ fontSize: "0.8em", width: "55%" }}
-          placeholder="Peterborough"
-          onChange={(element) => setCity(element.target.value)}
-        />
-      </div>
-      <div><label htmlFor="selectCity">Select:</label>
-        <select style={{width:'50%', fontSize:'0.8em'}} onChange={(element)=>{
-               setLat(element.target.value.split(':')[0])
-               setLong(element.target.value.split(':')[1])
-        }}>
-              
-                {cityData.map(({name, latitude,longitude,country,admin1,admin2},index)=>{
-                    return(
-                        <option key={index} value={`${latitude}:${longitude}`} style={{fontSize:'0.8em'}}>{name},{country},{latitude},{longitude}</option>
-                    )
-                    })}
-
-        </select></div>
-
+      
     <Tabs
     id="forecast-tabs"
     variant="pills"
@@ -85,23 +52,10 @@ return(
 
     <Tab eventKey="current" title="Current">
 
-    <div className="current-weather" >
-      <div>Current weather</div>
-
-      <div>Data retrieved at: {time}</div>
-      <div>
-        <p> Current temperature: {temp}</p>
-        <img src={description} style={{ width: "40%", border: "none" }}></img>
-      </div>
-      <div id="clock">
-        <Clock />
-      </div>
-      <button style={{ backgroundColor: "gray" }}>
-        <a href={"../"} className="button_link">
-          Back to title page
-        </a>
-      </button>
-
+    <div>
+    <Geolocation cityData={cityData} setCityData={setCityData} city={city} setCity={setCity} long={long} lat={lat} setLong={setLong} setLat={setLat}/>
+     
+     <CurrentWeather long={long} lat= {lat} city={city}/>
       </div>
     </Tab>
     <Tab eventKey="today" title="Today" >
@@ -123,6 +77,7 @@ return(
 
     <Tab eventKey="tomorrow" title="Tomorrow" >
     <div id="forecast">
+    <Geolocation cityData={cityData} setCityData={setCityData} city={city} setCity={setCity} long={long} lat={lat} setLong={setLong} setLat={setLat}/>
  <h5>Weather Tomorrow</h5>
  <h6>{tomorrow.toDateString()}</h6>
   
@@ -137,6 +92,7 @@ return(
 
     <Tab eventKey="7days" title="7 days" >
     <div id="forecast">
+    <Geolocation cityData={cityData} setCityData={setCityData} city={city} setCity={setCity} long={long} lat={lat} setLong={setLong} setLat={setLat}/>
  <h5>7 Day forecast</h5>
  <h6>From {startDate.toDateString()}</h6>
  <h6>To {endDate.toDateString()}</h6>
@@ -149,6 +105,6 @@ return(
     </div>
     </Tab>
   </Tabs>
-  </>   
+  </div>
     )
 }

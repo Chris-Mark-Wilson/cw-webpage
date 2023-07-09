@@ -18,7 +18,7 @@ export const DailyChart=({startDate,endDate, long, lat})=>{
   setWeatherObj(result);
   setIsLoading(false);
   
-  })},[])
+  })},[lat])
   
   if(isLoading)  return (
       <div id="spinner-container">

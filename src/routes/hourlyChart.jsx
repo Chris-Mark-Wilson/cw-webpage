@@ -26,7 +26,7 @@ export const HourlyChart = ({ startDate, endDate, long,lat }) => {
       setWeatherObj(result);
       setIsLoading(false);
     });
-  }, []);
+  }, [lat]);
 
   // weatherObj is an object delivered from the api
   // it contains keys of time (iso8601), temperature_2m (*c), precipitation_probability (%), cloudcover (%) and weathercode (number)

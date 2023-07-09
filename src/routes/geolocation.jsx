@@ -2,7 +2,7 @@ import {useState,useEffect} from 'react'
 import { fetchSelectedCity } from '../utils/geocodeApi';
 
 
-export const Geolocation = (cityData,setCityData,city, setCity, long, lat, setLong, setLat) =>{
+export const Geolocation = ({cityData,setCityData,city, setCity, long, lat, setLong, setLat}) =>{
 
 
 
@@ -14,7 +14,7 @@ export const Geolocation = (cityData,setCityData,city, setCity, long, lat, setLo
         setCityData([{name:'No results found', latitiude:"",longitude:"",country:"",admin1:"",admin2:""}]);
         });
       }, [city]);
-
+console.log(cityData)
 return (
 <>
 <div>
