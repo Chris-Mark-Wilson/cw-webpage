@@ -1,4 +1,4 @@
-import { ImageCarousel } from "./imageCarousel";
+import { ImageCarousel } from "../components/imageCarousel";
 
 import { useState, useEffect } from "react";
 import { getUrlList } from "../utils/firebaseApi";

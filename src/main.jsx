@@ -1,15 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { ErrorPage } from './routes/errorPage'
+import { ErrorPage } from './components/errorPage'
 import './index.css'
 import './Root.css'
 import {Root} from './routes/root.jsx'
 import { createBrowserRouter,RouterProvider } from 'react-router-dom'
 import { AboutUs } from './routes/aboutUs.jsx'
-import { CurrentWeather } from './routes/currentWeather.jsx'
+
 import { Lockdown } from './routes/lockdown.jsx'
 import { Forecast } from './routes/forecast.jsx'
-import { Header } from './routes/header'
+
 
 
 const router= createBrowserRouter([
@@ -18,22 +18,14 @@ const router= createBrowserRouter([
     element:<Root />,
     errorElement:<ErrorPage/>,
   },
-      {
-        path:"header",
-    element:<Header/>,
-  errorElement:<ErrorPage/>
-},
+    
   
   {
       path:"aboutUs",
       element:<AboutUs />,
       errorElement:<ErrorPage/>
     },
-    {
-      path:"currentWeather",
-      element:<CurrentWeather/>,
-      errorElement:<ErrorPage/>
-    },
+   
     {
       path:"lockdown",
       element:<Lockdown />,

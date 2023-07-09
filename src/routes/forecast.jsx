@@ -1,14 +1,13 @@
-import { HourlyChart } from './hourlyChart'
+import { HourlyChart } from '../components/hourlyChart'
 import { useState } from 'react'
-import { DailyChart } from './dailyChart';
+import { DailyChart } from '../components/dailyChart';
 import { useEffect } from "react";
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
-import { fetchCurrentWeather } from "../utils/fetchWeatherApi";
-import Clock from "./clock";
+
 import { fetchSelectedCity } from "../utils/geocodeApi";
-import {Geolocation} from './geolocation'
-import { CurrentWeather } from './currentWeather';
+import {Geolocation} from '../components/geolocation'
+import { CurrentWeather } from '../components/currentWeather';
 
 export const Forecast=()=>{
 
