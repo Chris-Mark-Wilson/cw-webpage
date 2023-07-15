@@ -18,7 +18,10 @@ export const Header=()=>{
              <img src='./vite.svg' style={{height:'40px',border:'none'}}></img>
              <br/><br/>
        <h6>weather api  open-meteo.com</h6>
+       <div><strong>Page is  work in progress</strong></div>
+       <div><strong>More optimised for mobile as is</strong></div>
        </div>
+       
        
        
        <div className="sides" id="email">

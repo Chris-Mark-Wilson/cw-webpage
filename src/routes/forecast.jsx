@@ -16,9 +16,9 @@ const[endDate,setEndDate]=useState(new Date(startDate.getFullYear(),startDate.ge
 const [tomorrow,setTomorrow]=useState(new Date(startDate.getFullYear(),startDate.getMonth(),startDate.getDate()+2))
 const [key, setKey] = useState('today');
 
-const [long, setLong] = useState(-0.25);
-const [lat, setLat] = useState(52.57);
-const [city, setCity] = useState("Peterborough");
+const [long, setLong] = useState(0);//-0.25
+const [lat, setLat] = useState(0);//52.57
+const [city, setCity] = useState("North pole...");
 const[cityData,setCityData]=useState([]);
 
 //-------------------get city and current weather----------------
