@@ -9,6 +9,7 @@ import { AboutUs } from './routes/aboutUs.jsx'
 
 import { Lockdown } from './routes/lockdown.jsx'
 import { Forecast } from './routes/forecast.jsx'
+import{RubberDuck} from './routes/rubberduck.jsx'
 
 
 
@@ -34,6 +35,11 @@ const router= createBrowserRouter([
     {
       path:"forecast",
       element:<Forecast />,
+      errorElement:<ErrorPage/>
+    },
+    {
+      path:"rubberduck",
+      element:<RubberDuck />,
       errorElement:<ErrorPage/>
     }
     

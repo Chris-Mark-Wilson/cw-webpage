@@ -1,4 +1,4 @@
-import {useState,useEffect} from 'react'
+import {useEffect} from 'react'
 import { fetchSelectedCity } from '../utils/geocodeApi';
 
 
@@ -38,7 +38,6 @@ return (
                setLat(element.target.value.split(':')[0])
                setLong(element.target.value.split(':')[1])
         }}>
-              
                 {cityData.map(({name, latitude,longitude,country,admin1,admin2},index)=>{
                     return(
                         <option key={index} value={`${latitude}:${longitude}`} style={{fontSize:'0.8em'}}>{name},{country},{latitude},{longitude}</option>

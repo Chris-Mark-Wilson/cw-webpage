@@ -20,9 +20,8 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
                         <Nav.Link href="./" >Home</Nav.Link>
                         <Nav.Link href="./aboutUs">About us</Nav.Link>
                          <Nav.Link href="./lockdown">Lockdown</Nav.Link>
-                         
-                          
                             <Nav.Link href="./forecast">WeatherApp</Nav.Link>
+                            <Nav.Link href="./rubberduck">Rubber Duck Debugger</Nav.Link>
                         
                       </Nav>
                 </Navbar.Collapse>
