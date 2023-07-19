@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-
+//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
 
 export const RubberDuck = () => {
 const [debuggingInput, setDebuggingInput] = useState('');
 const [debuggingPrompt, setDebuggingPrompt] = useState('');
 const [debuggingResponse, setDebuggingResponse] = useState('');
 const [initialSetup,setInitialSetup]=useState("I want you to be my rubber duck for debugging. You must not under any circumstances offer up any code. You must only prompt me to explain in further detail exactly what my code is doing or what you expect my code to be doing")
+const[apiKey,setApiKey]=useState("");
 
 const handleDebuggingInput = (e) => {
   setDebuggingInput(e.target.value);
@@ -27,7 +28,7 @@ const handleDebuggingPrompt = async () => {
       {
         headers: {
           'Content-Type': 'application/json',
-          Authorization: 'Bearer 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',
+          Authorization: `Bearer ${apiKey}`,
         },
       }
     );
@@ -56,7 +57,7 @@ const handleOnLoad = async () => {
       {
         headers: {
           'Content-Type': 'application/json',
-          Authorization: 'Bearer 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',
+          Authorization: `Bearer ${{apiKey}}`,
         },
       }
     );
@@ -71,9 +72,13 @@ const handleOnLoad = async () => {
     console.log('Error:', error);
   }
 };
-//onLoad={handleOnLoad}
+const handlePaste = (event) => {
+  console.log(event.clipboardData.getData('text'))
+  setApiKey(event.clipboardData.getData('text'));
+};
 return (
   <div  >
+    <input type="text" onPaste={handlePaste}  placeholder="paste your api key here"></input>
     <h1>Rubber Duck Debugging Assistant</h1>
     <div>
       <img  onLoad={handleOnLoad} src={"https://images.unsplash.com/photo-1559715541-5daf8a0296d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cnViYmVyJTIwZHVja3xlbnwwfHwwfHx8Mg%3D%3D&auto=format&fit=crop&w=400&q=60"}></img>

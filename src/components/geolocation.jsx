@@ -10,11 +10,17 @@ export const Geolocation = ({cityData,setCityData,city, setCity, long, lat, setL
     useEffect(() => {
         fetchSelectedCity(city)
         .then((result) => {
-           result?setCityData(result):
+          console.log(result)
+           if(result){
+            setCityData(result);
+            setLat(result[0].latitude);
+            setLong(result[0].longitude);
+           }else
         setCityData([{name:'No results found', latitiude:"",longitude:"",country:"",admin1:"",admin2:""}]);
+      
         });
       }, [city]);
-console.log(cityData)
+
 return (
 <>
 <div id="geolocation">
