@@ -72,8 +72,9 @@ const handleOnLoad = async () => {
   }
 };
 const handlePaste = (event) => {
-  console.log(event.clipboardData.getData('text'))
+ 
   setApiKey(event.clipboardData.getData('text'));
+  handleOnLoad();
 };
 return (
   <div  >
