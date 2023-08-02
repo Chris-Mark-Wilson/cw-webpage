@@ -22,7 +22,7 @@ const handleDebuggingPrompt = async () => {
       {
         model:"text-davinci-003",
         prompt: `Debugging issue: ${debuggingPrompt}\n\nUser query: ${debuggingInput}\n\nAI response:`,
-        max_tokens: 50,
+        max_tokens: 100,
       },
       {
         headers: {
